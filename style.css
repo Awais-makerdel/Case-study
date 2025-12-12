@@ -303,9 +303,10 @@ body{
 /* PREMIUM GOLD CTA SECTION */
 .cta-proof-section {
   width: 100%;
-  padding: 60px 0;
+  padding: 80px 0;
   text-align: center;
   background: #000000; /* deep black */
+  background:lenght 100%;
 }
 
 /* GOLD BUTTON */
@@ -330,4 +331,60 @@ body{
   color: #000000;       /* black text for contrast */
   border-color: #d4af37;
   box-shadow: 0 0 28px rgba(212, 175, 55, 0.45); /* stronger gold glow */
+}
+
+
+/* GLOBAL PREMIUM CTA STYLE */
+.cta {
+  display: inline-block;
+  padding: 16px 42px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  letter-spacing: 0.4px;
+  transition: all 0.35s ease;
+  border: 2px solid #d4af37; /* premium gold border */
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0,0,0,0); /* no initial shadow */
+}
+
+/* PRIMARY CTA — White Button */
+.cta-white {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* SECONDARY CTA — Black Button */
+.cta-black {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* GOLD CTA */
+.cta-gold {
+  background: #d4af37;
+  color: #000000;
+}
+
+/* HOVER — UNIVERSAL for all cta classes */
+.cta:hover {
+  transform: translateY(-4px); /* subtle lift */
+  box-shadow: 0 6px 28px rgba(212, 175, 55, 0.45); /* gold glow */
+}
+
+/* COLOR SWITCHING ON HOVER */
+.cta-white:hover {
+  background: #d4af37; /* gold */
+  color: #000000;
+}
+
+.cta-black:hover {
+  background: #d4af37; /* gold */
+  color: #000000;
+}
+
+.cta-gold:hover {
+  background: #ffffff; /* white */
+  color: #000000;
 }
