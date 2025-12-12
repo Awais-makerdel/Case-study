@@ -74,3 +74,59 @@ body{
   height: 260px;
   border-radius: 8px;
 }
+
+.about-section {
+  background: #333333;
+  padding: 80px 0;
+  color: white;
+  font-family: "Georgia", "Lora", serif;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+.about-text {
+  flex: 1.1;
+}
+
+.about-text h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+  opacity: 0.95;
+}
+
+.about-photo-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-placeholder {
+  background: #444;
+  padding: 14px;
+  border-radius: 14px;
+  width: 350px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.photo-placeholder img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
