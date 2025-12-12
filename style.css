@@ -298,3 +298,36 @@ body{
   font-weight: 600;
   color: #000;
 }
+
+
+/* PREMIUM GOLD CTA SECTION */
+.cta-proof-section {
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  background: #000000; /* deep black */
+}
+
+/* GOLD BUTTON */
+.cta-proof-button {
+  background: #ffffff; /* white base */
+  color: #000000; /* black text */
+  padding: 18px 48px;
+  font-size: 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid #d4af37; /* premium gold border */
+  transition: 0.3s ease;
+  display: inline-block;
+  letter-spacing: 0.4px;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.25); /* soft gold glow */
+}
+
+/* HOVER EFFECT */
+.cta-proof-button:hover {
+  background: #d4af37;  /* gold fill */
+  color: #000000;       /* black text for contrast */
+  border-color: #d4af37;
+  box-shadow: 0 0 28px rgba(212, 175, 55, 0.45); /* stronger gold glow */
+}
