@@ -491,3 +491,108 @@ body{
 }
 
 /* CTA button uses global class .cta already defined */
+
+/* TESTIMONIAL SECTION */
+.testimonial-section {
+  background: #f8f8f8;
+  padding: 80px 20px;
+}
+
+.testimonial-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonial-heading {
+  font-family: "Georgia", "Lora", serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.gold-line {
+  width: 70px;
+  height: 3px;
+  background: #d4af37;
+  margin: 0 auto 40px auto;
+  border-radius: 2px;
+}
+
+/* Layout */
+.testimonial-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* LEFT: Client Photo + Info */
+.testimonial-left {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.client-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.client-name {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.client-role,
+.client-address {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+/* CENTER: Bullets */
+.testimonial-center {
+  flex: 2 1 400px;
+}
+
+.testimonial-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.testimonial-list li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.testimonial-list strong {
+  color: #000;
+}
+
+/* RIGHT: CRM Proof */
+.testimonial-right {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.crm-proof {
+  width: 100%;
+  max-width: 250px;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+}
+
+/* CTA Below */
+.testimonial-cta {
+  margin-top: 50px;
+  text-align: center;
+}
+
