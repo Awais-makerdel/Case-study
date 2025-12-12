@@ -596,3 +596,82 @@ body{
   text-align: center;
 }
 
+/* HOW I WORK SECTION */
+.how-i-work-section {
+  background: #ffffff;
+  padding: 80px 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-heading {
+  font-family: "Georgia", "Lora", serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.gold-line {
+  width: 70px;
+  height: 3px;
+  background: #d4af37;
+  margin: 0 auto 30px auto;
+  border-radius: 2px;
+}
+
+.how-subheading {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+/* 3 Columns Layout */
+.how-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: left;
+}
+
+.how-column {
+  flex: 1 1 300px;
+  background: #f9f9f9;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(212, 175, 55, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-column:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 35px rgba(212, 175, 55, 0.4);
+}
+
+.column-title {
+  font-family: "Georgia", "Lora", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #d4af37; /* Gold title */
+  margin-bottom: 15px;
+}
+
+.column-list {
+  list-style: none;
+  padding: 0;
+}
+
+.column-list li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.column-list strong {
+  color: #000;
+}
