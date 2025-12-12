@@ -388,3 +388,106 @@ body{
   background: #ffffff; /* white */
   color: #000000;
 }
+
+
+
+/* PRICING SECTION */
+.pricing-section {
+  background: #ffffff;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* LEFT SIDE */
+.pricing-left {
+  flex: 1 1 500px;
+}
+
+.pricing-heading {
+  font-family: "Georgia", "Lora", serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.gold-line {
+  width: 70px;
+  height: 3px;
+  background: #d4af37;
+  margin: 15px 0 25px 0;
+  border-radius: 2px;
+}
+
+.pricing-subheading {
+  font-family: "Georgia", "Lora", serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.pricing-list li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.pricing-list strong {
+  font-weight: 600;
+}
+
+/* RIGHT SIDE */
+.pricing-right {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.pricing-badge {
+  text-align: center;
+  background: #000000;
+  color: #ffffff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+}
+
+.savings-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.offer-price {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-proof {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+}
+
+/* CTA button uses global class .cta already defined */
