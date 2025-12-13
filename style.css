@@ -675,6 +675,46 @@ body{
 .column-list strong {
   color: #000;
 } 
+
+/* Hero Section - Portfolio Page */
+.portfolio-hero {
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.portfolio-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.portfolio-hero-headline {
+  font-family: "Georgia", "Lora", serif;
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.portfolio-hero-cta {
+  display: inline-block;
+  background: #d4af37; /* Golden button */
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 16px 40px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-hero-cta:hover {
+  background: #ffd700; /* lighter gold on hover */
+  color: #000000;
+  transform: translateY(-3px);
+}
+
 /* FINAL CTA */
 .final-cta-section {
   background: #000000;
