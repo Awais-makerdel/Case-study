@@ -226,7 +226,7 @@ body{
 }
 
 .cta-container {
-  max-width: 100px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -317,95 +317,54 @@ body{
   font-weight: 600;
   color: #000;
 }
-
-
-/* PREMIUM GOLD CTA SECTION */
-.cta-proof-section {
-  width: 100%;
-  padding: 80px 0;
-  text-align: center;
-  background: #000000; /* deep black */
-  background:lenght 200%;
+/* --- CTA Section --- */
+.cta-section {
+  background: #000;           /* Full black background */
+  color: #fff;                /* White text */
+  padding: 80px 20px;         /* Top/Bottom 80px, sides 20px */
+  text-align: center;         /* Center content */
+  width: 100%;                /* Ensure full-width */
 }
 
-/* GOLD BUTTON */
-.cta-proof-button {
-  background: #ffffff; /* white base */
-  color: #000000; /* black text */
-  padding: 18px 48px;
-  font-size: 18px;
-  border-radius: 50px;
-  text-decoration: none;
+.cta-container {
+  max-width: 700px;           /* Max content width */
+  margin: 0 auto;             /* Center container horizontally */
+}
+
+.cta-heading {
+  font-size: 36px;
   font-weight: 700;
-  border: 2px solid #d4af37; /* premium gold border */
-  transition: 0.3s ease;
-  display: inline-block;
-  letter-spacing: 0.4px;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.25); /* soft gold glow */
+  margin-bottom: 15px;
 }
 
-/* HOVER EFFECT */
-.cta-proof-button:hover {
-  background: #d4af37;  /* gold fill */
-  color: #000000;       /* black text for contrast */
-  border-color: #d4af37;
-  box-shadow: 0 0 28px rgba(212, 175, 55, 0.45); /* stronger gold glow */
+.cta-subtext {
+  font-size: 18px;
+  opacity: 0.85;
+  margin-bottom: 35px;
+  line-height: 1.6;
 }
 
-
-/* GLOBAL PREMIUM CTA STYLE */
-.cta {
+/* --- CTA Button --- */
+.cta-btn {
   display: inline-block;
-  padding: 16px 42px;
+  background: #fff;           /* White background */
+  color: #000;                /* Black text */
+  padding: 16px 40px;
   font-size: 18px;
   font-weight: 700;
+  border-radius: 8px;
+  border: 2px solid #d4af37; /* Premium gold border */
   text-decoration: none;
-  border-radius: 50px;
-  letter-spacing: 0.4px;
-  transition: all 0.35s ease;
-  border: 2px solid #d4af37; /* premium gold border */
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
-  box-shadow: 0 0 0 rgba(0,0,0,0); /* no initial shadow */
+  box-shadow: 0 0 0 rgba(0,0,0,0);
 }
 
-/* PRIMARY CTA — White Button */
-.cta-white {
-  background: #ffffff;
-  color: #000000;
-}
-
-/* SECONDARY CTA — Black Button */
-.cta-black {
-  background: #000000;
-  color: #ffffff;
-}
-
-/* GOLD CTA */
-.cta-gold {
-  background: #d4af37;
-  color: #000000;
-}
-
-/* HOVER — UNIVERSAL for all cta classes */
-.cta:hover {
-  transform: translateY(-4px); /* subtle lift */
-  box-shadow: 0 6px 28px rgba(212, 175, 55, 0.45); /* gold glow */
-}
-
-/* COLOR SWITCHING ON HOVER */
-.cta-white:hover {
-  background: #d4af37; /* gold */
-  color: #000000;
-}
-
-.cta-black:hover {
-  background: #d4af37; /* gold */
-  color: #000000;
-}
-
-.cta-gold:hover {
-  background: #ffffff; /* white */
-  color: #000000;
+.cta-btn:hover {
+  background: #d4af37;        /* Gold fill on hover */
+  color: #000;                /* Keep text black */
+  box-shadow: 0 6px 28px rgba(212, 175, 55, 0.45); /* subtle gold glow */
+  transform: translateY(-2px);
 }
 
 
