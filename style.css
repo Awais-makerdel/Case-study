@@ -64,6 +64,8 @@ body{
   color: #000; /* black text on hover */
   transform: translateY(-3px); /* subtle lift */
   box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4); /* golden glow */;
+
+  
 }
 
 /* RIGHT SIDE VSL */
@@ -798,4 +800,64 @@ body{
   margin-top: 40px;
   font-size: 14px;
   color: #888888;
+}
+
+
+/* --- Restore All CTA Buttons --- */
+.cta, .cta-btn {
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;          /* Rounded button */
+  border: 2px solid #d4af37;    /* Gold border */
+  background: #fff;              /* Default white background */
+  color: #000;                   /* Default black text */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+/* --- Hover effect for all CTA buttons --- */
+.cta:hover, .cta-btn:hover {
+  background: #d4af37;           /* Gold fill on hover */
+  color: #000;                    /* Keep text black */
+  box-shadow: 0 6px 28px rgba(212, 175, 55, 0.45); /* subtle gold glow */
+  transform: translateY(-2px);
+}
+
+/* --- Optional variants --- */
+.cta-white { background: #fff; color: #000; border: 2px solid #d4af37; }
+.cta-black { background: #000; color: #fff; border: 2px solid #d4af37; }
+.cta-gold { background: #d4af37; color: #000; border: 2px solid #d4af37; }
+
+.cta-white:hover, .cta-black:hover { background: #d4af37; color: #000; }
+.cta-gold:hover { background: #fff; color: #000; }
+
+
+/* --- Hero Section CTA Styling --- */
+.hero .cta-btn {
+  display: inline-block;
+  padding: 18px 42px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 2px solid #d4af37;   /* Gold border */
+  background: #fff;             /* White background */
+  color: #000;                  /* Black text */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+/* --- Hover Effect --- */
+.hero .cta-btn:hover {
+  background: #d4af37;          /* Gold fill on hover */
+  color: #000;                   /* Keep text black */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(212, 175, 55, 0.45); /* subtle gold glow */
 }
