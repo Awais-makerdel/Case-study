@@ -822,3 +822,27 @@ body{
   color: #888888;
 }
 
+
+
+/* --- NAV BRAND GOLDEN & SIZE --- */
+.nav .brand {
+  font-size: 1.3rem; /* slightly bigger */
+  color: #d4af37 !important; /* golden color */
+  font-weight: 800; /* optional: make bolder for premium feel */
+}
+
+/* --- HERO SECTION MAIN CTA GOLD HOVER --- */
+.hero .cta-btn {
+  background: #000; /* keep black base */
+  color: #fff; /* white text */
+  transition: all 0.3s ease-in-out;
+}
+
+.hero .cta-btn:hover {
+  background: #d4af37; /* gold on hover */
+  color: #000; /* black text on hover */
+  transform: translateY(-3px); /* subtle lift */
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4); /* golden glow */
+}
+
+
