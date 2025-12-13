@@ -79,10 +79,11 @@ body{
   border-radius: 8px;
 }
 
+/* ABOUT / STORY SECTION */
 .about-section {
-  background: #333333;
+  background: linear-gradient(135deg, #2b2b2b, #3a3a3a); /* subtle premium gradient */
   padding: 80px 0;
-  color: white;
+  color: #ffffff;
   font-family: "Georgia", "Lora", serif;
 }
 
@@ -90,6 +91,7 @@ body{
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap; /* for responsiveness */
   align-items: flex-start;
   justify-content: space-between;
   gap: 60px;
@@ -101,17 +103,38 @@ body{
 }
 
 .about-text h2 {
-  font-size: 45px;
+  font-size: 38px; /* larger for good hierarchy */
   font-weight: 700;
   margin-bottom: 25px;
   line-height: 1.2;
+  color: #FFD700; /* subtle golden effect on heading */
 }
 
 .about-text p {
-  font-size: 45px;
+  font-size: 20px; /* readable size */
   line-height: 1.7;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   opacity: 0.95;
+  color: #f0f0f0; /* slight off-white for contrast */
+}
+
+/* Optional: Add subtle text shadow for premium feel */
+.about-text h2, .about-text p {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Responsive for smaller screens */
+@media(max-width:1024px){
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about-text h2 {
+    font-size: 32px;
+  }
+  .about-text p {
+    font-size: 18px;
+  }
 }
 
 .about-photo-card {
