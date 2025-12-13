@@ -1,183 +1,423 @@
 /* style.css */
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EstateSpark — Real Estate Email Systems (Austin, TX)</title>
-  <meta name="description" content="Premium email systems for Texas realtors. Convert cold leads into closings with automated, psychology-driven follow-up." />
-  <link rel="stylesheet" href="style.css"/>
-<link rel="stylesheet" href="css/style.css">
+/* Simple, modern, responsive styles — no frameworks. */
 
-</head>
+/* --- Reset-ish --- */
+:root{
+  --bg:#ffffff;
+  --text:#0b0b0b;
+  --muted:#6b7280;
+  --accent:#0066ff;
+  --radius:14px;
+  --container:1100px;
+}
 
-<body>
+*{box-sizing:border-box}
+html,body{height:100%}
 
-<!-- NAV -->
-<header class="nav-root" id="top">
-  <nav class="nav container">
-    <div class="brand">EstateSpark</div>
+body{
+  margin:0;
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
 
-    <button id="navToggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+/* Container */
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:28px;
+}
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#stories">Success Stories</a></li>
-      <li><a href="#deliver">What I Deliver</a></li>
-      <li><a href="#case">Case Study</a></li>
-      <li><a href="#how">How It Works</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a class="cta" href="#contact">Book My Call</a></li>
-    </ul>
-  </nav>
-</header>
+/* ================= NAV ================= */
+.nav-root{
+  position:sticky;
+  top:0;
+  z-index:60;
+  background:#000;
+  color:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
 
-<!-- HERO -->
-<section class="hero-clean" style="background:#fff; color:#000; padding:70px 0;">
-  <div class="container" style="display:grid; grid-template-columns:1fr 380px; gap:40px; align-items:center;">
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:14px 28px;
+}
 
-    <div>
-      <h1 style="font-size:2.3rem; font-weight:800; line-height:1.1; margin-bottom:16px;">
-        Convert Cold Austin Leads Into Hot Closings<br>
-        With a Real Estate Email System Built to Scale
-      </h1>
+.brand{
+  font-weight:700;
+  font-size:1.05rem;
+  color:#fff;
+}
 
-      <p style="font-size:1.15rem; color:#333; max-width:560px;">
-        Stop leaving money on the table.  
-        We build premium, data-driven email systems for Texas realtors that automate follow-up and keep you top-of-mind until the contract is signed.
-      </p>
+.nav-links{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
 
-      <a href="#contact" class="cta" style="margin-top:24px; display:inline-block;">
-        Get More Deals Automatically
-      </a>
-    </div>
+.nav-links a{
+  color:#fff;
+  text-decoration:none;
+  padding:8px 10px;
+  border-radius:10px;
+}
 
-    <div style="background:#f5f5f5; border-radius:14px; padding:16px;">
-      <div style="height:220px; background:#ddd; border-radius:12px; display:flex; align-items:center; justify-content:center;">
-        VSL Placeholder
-      </div>
-      <p style="font-size:.9rem; text-align:center; margin-top:10px;">
-        Watch how this system turns cold leads into conversations.
-      </p>
-    </div>
+.nav-links a:hover{
+  background:rgba(255,255,255,0.06);
+}
 
-  </div>
-</section>
+.nav-links .cta{
+  background:#fff;
+  color:#000;
+  padding:8px 14px;
+  border-radius:10px;
+  font-weight:700;
+}
 
-<!-- ABOUT -->
-<section class="about-section">
-  <div class="about-container">
+.nav-toggle{
+  display:none;
+  background:none;
+  border:0;
+  color:#fff;
+  font-size:20px;
+}
 
-    <div class="about-text">
-      <h2>Who I Am — And Why Realtors Trust Me</h2>
+/* ================= HERO ================= */
+.hero{
+  width:90%;
+  max-width:1200px;
+  margin:70px auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:40px;
+  background:#000;
+  color:#fff;
+  padding:60px 40px;
+  border-radius:18px;
+}
 
-      <p>
-        I’m <strong>Alex Shah</strong>. I help real estate professionals stop losing leads to silence and start converting conversations into closings.
-      </p>
+.hero-left{flex:1}
 
-      <p>
-        After years in high-stakes B2C sales, I saw the same mistake everywhere: generic follow-up that kills momentum.
-      </p>
+.hero-headline{
+  font-size:36px;
+  font-weight:800;
+  line-height:1.2;
+  margin-bottom:20px;
+  color:#fff;
+}
 
-      <p>
-        Real estate is emotional and trust-driven.  
-        I specialize in email because it lets you guide prospects patiently — using psychology, timing, and local authority — until you’re the only agent they trust when it’s time to move.
-      </p>
-    </div>
+.hero-sub{
+  font-size:18px;
+  margin-bottom:30px;
+  opacity:0.9;
+  color:#fff;
+}
 
-    <div class="about-photo-card">
-      <img src="https://via.placeholder.com/350x420" alt="Alex Shah">
-    </div>
+/* HERO CTA */
+.cta-btn{
+  display:inline-block;
+  background:#fff;
+  color:#000;
+  padding:15px 28px;
+  font-size:18px;
+  font-weight:600;
+  border-radius:8px;
+  text-decoration:none;
+  transition:0.3s ease-in-out;
+}
 
-  </div>
-</section>
+.cta-btn:hover{
+  background:#e5e5e5;
+  transform:translateY(-2px);
+}
 
-<!-- CASE STUDY -->
-<section class="proven-roi">
-  <div class="container">
+/* RIGHT SIDE VSL */
+.hero-right{flex:0.8}
 
-    <h2 class="roi-headline">Proven Track Record & Measurable ROI for Texas Realtors</h2>
+.vsl-box iframe{
+  width:100%;
+  height:260px;
+  border-radius:8px;
+}
 
-    <div class="roi-content">
+/* ================= ABOUT ================= */
+.about-section{
+  background:#333333;
+  padding:80px 0;
+  color:white;
+  font-family:"Georgia","Lora",serif;
+}
 
-      <div class="roi-left">
-        <img src="https://via.placeholder.com/200x330" alt="Client Javier R.">
-        <div class="client-info">
-          <h4>Javier R.</h4>
-          <p>Independent Broker</p>
-          <p>North Austin / Round Rock, TX</p>
-        </div>
-      </div>
+.about-container{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:60px;
+  padding:0 20px;
+}
 
-      <div class="roi-center">
-        <ul>
-          <li><strong>The Challenge:</strong> 2,500 cold CRM leads, 8% open rate, zero conversions.</li>
-          <li><strong>The System:</strong> Hyper-segmented nurture emails using Texas tax data, schools, and commute insights.</li>
-          <li><strong>The Result:</strong> 38% open rate, 9 calls, 2 homes closed at $450k+ in one quarter.</li>
-          <li><strong>The ROI:</strong> System paid for itself over 15× on the first two deals.</li>
-        </ul>
-      </div>
+.about-text{flex:1.1}
 
-      <div class="roi-right">
-        <img src="https://via.placeholder.com/250x330" alt="CRM Dashboard Proof">
-      </div>
+.about-text h2{
+  font-size:45px;
+  font-weight:700;
+  margin-bottom:25px;
+  line-height:1.2;
+}
 
-    </div>
-  </div>
-</section>
+.about-text p{
+  font-size:23px;
+  line-height:1.7;
+  margin-bottom:22px;
+  opacity:0.95;
+}
 
-<!-- PACKAGE -->
-<section class="package-section">
-  <div class="package-container">
+.about-photo-card{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
 
-    <h2>What’s Included in the Ignite & Convert™ System</h2>
+.photo-placeholder{
+  background:#444;
+  padding:14px;
+  border-radius:14px;
+  width:350px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.35);
+}
 
-    <ul class="package-list">
-      <li><strong>7 Email Sequences:</strong> Buyers, sellers, and nurture.</li>
-      <li><strong>Psychology-Mapped Journey:</strong> Every email removes resistance.</li>
-      <li><strong>Texas Authority Copy:</strong> Austin-specific data and insights.</li>
-      <li><strong>High-Reply CTAs:</strong> Built to book conversations.</li>
-      <li><strong>CRM-Ready:</strong> Plug-and-play delivery.</li>
-    </ul>
+.photo-placeholder img{
+  width:100%;
+  border-radius:12px;
+  display:block;
+}
 
-    <a href="#contact" class="cta">See If You Qualify →</a>
+/* ================= ROI ================= */
+.proven-roi{
+  background:#f8f8f8;
+  padding:80px 20px;
+  font-family:"Georgia","Lora",serif;
+  color:#111;
+}
 
-  </div>
-</section>
+.roi-headline{
+  text-align:center;
+  font-size:36px;
+  font-weight:700;
+  margin-bottom:60px;
+}
 
-<!-- PRICING -->
-<section class="pricing-section">
-  <div class="pricing-container">
+.roi-content{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:40px;
+  max-width:1200px;
+  margin:auto;
+}
 
-    <div class="pricing-left">
-      <h2>A Small Investment That Can Pay for Itself With One Deal</h2>
-      <p><strong>Original price:</strong> $800</p>
-      <p><strong>Today only:</strong> $197</p>
-      <p>Pay only after approval. Zero risk.</p>
-      <a href="#contact" class="cta">Claim My $197 Offer →</a>
-    </div>
+.roi-left .client-img{
+  width:2in;
+  height:3.3in;
+  border-radius:12px;
+  object-fit:cover;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
 
-    <div class="pricing-right">
-      <div class="pricing-badge">
-        Save $603 — Limited Time
-      </div>
-    </div>
+.roi-center{flex:1.5}
 
-  </div>
-</section>
+.roi-center ul{
+  list-style:disc;
+  padding-left:20px;
+}
 
-<!-- FINAL CTA -->
-<section class="final-cta-section">
-  <div class="container">
-    <h2>Stop Chasing Leads. Start Closing Automatically.</h2>
-    <a href="#contact" class="cta cta-gold">Book My Call Now →</a>
-    <p class="trusted-line">Trusted by Texas realtors and real estate professionals</p>
-  </div>
-</section>
+.roi-center li{
+  margin-bottom:20px;
+  font-size:1.15rem;
+  line-height:1.6;
+}
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <p>© 2025 EstateSpark. All rights reserved.</p>
-</footer>
+.roi-right .crm-img{
+  width:250px;
+  height:330px;
+  border-radius:12px;
+  object-fit:cover;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
 
-</body>
-</html>
+@media(max-width:1024px){
+  .roi-content{
+    flex-direction:column;
+    align-items:center;
+  }
+  .roi-left,.roi-right{
+    margin-bottom:30px;
+  }
+}
+
+/* ================= CTA SECTION ================= */
+.cta-section{
+  background:#000;
+  color:#fff;
+  padding:80px 20px;
+  text-align:center;
+}
+
+.cta-container{
+  max-width:700px;
+  margin:0 auto;
+}
+
+.cta-heading{
+  font-size:36px;
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+.cta-subtext{
+  font-size:18px;
+  opacity:0.85;
+  margin-bottom:35px;
+  line-height:1.6;
+}
+
+/* ================= PACKAGE ================= */
+.package-section{
+  background:#ffffff;
+  padding:90px 20px;
+  display:flex;
+  justify-content:center;
+}
+
+.package-container{
+  max-width:900px;
+  text-align:center;
+  color:#000;
+}
+
+.package-label{
+  font-size:14px;
+  letter-spacing:2px;
+  color:#D4AF37;
+  margin-bottom:10px;
+  font-weight:600;
+}
+
+.package-heading{
+  font-family:"Georgia","Lora",serif;
+  font-size:36px;
+  margin-bottom:10px;
+  font-weight:700;
+}
+
+.gold-line{
+  width:70px;
+  height:3px;
+  background:#D4AF37;
+  margin:0 auto 40px auto;
+  border-radius:2px;
+}
+
+.package-list{
+  list-style:none;
+  padding:0;
+  margin:0 auto;
+  max-width:750px;
+  text-align:left;
+}
+
+.package-list li{
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:18px;
+  font-family:"Segoe UI",Arial,sans-serif;
+}
+
+.package-list strong{
+  font-weight:600;
+  color:#000;
+}
+
+/* ================= PREMIUM CTA ================= */
+.cta-proof-section{
+  width:100%;
+  padding:80px 0;
+  text-align:center;
+  background:#000000;
+}
+
+.cta-proof-button{
+  background:#ffffff;
+  color:#000000;
+  padding:18px 48px;
+  font-size:18px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:700;
+  border:2px solid #d4af37;
+  transition:0.3s ease;
+  display:inline-block;
+  letter-spacing:0.4px;
+  box-shadow:0 0 20px rgba(212,175,55,0.25);
+}
+
+.cta-proof-button:hover{
+  background:#d4af37;
+  color:#000000;
+  box-shadow:0 0 28px rgba(212,175,55,0.45);
+}
+
+/* ================= FOOTER ================= */
+.site-footer{
+  background:#111111;
+  color:#ffffff;
+  padding:50px 20px 30px;
+}
+
+.footer-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:30px;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.footer-links ul,
+.footer-social ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer-links a,
+.footer-social a,
+.footer-contact a{
+  color:#d4af37;
+  text-decoration:none;
+  transition:0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover,
+.footer-contact a:hover{
+  color:#ffd700;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:40px;
+  font-size:14px;
+  color:#888;
+}
