@@ -202,49 +202,122 @@ body{
   border-radius: 2px;
   margin: 10px auto 0 auto; /* spacing below headline */
 }
-
-/* LEFT CLIENT IMAGE */
-.roi-left .client-img {
-  width: 2in; /* ~2 inches */
-  height: 3.3in; /* ~3.3 inches */
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+.testimonial-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: system-ui, sans-serif;
 }
 
-/* CENTER BULLETS */
-.roi-center {
-  flex: 1.5;
+input[type="radio"] {
+  display: none;
 }
 
-.roi-center ul {
-  list-style: disc;
-  padding-left: 20px;
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-.roi-center li {
-  margin-bottom: 20px;
-  font-size: 1.15rem;
-  line-height: 1.6;
+.arrow {
+  font-size: 40px;
+  color: #d4af37;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
 }
 
-/* RIGHT CRM IMAGE */
-.roi-right .crm-img {
-  width: 250px;
-  height: 330px;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+.arrow:hover {
+  opacity: 0.7;
 }
 
-/* RESPONSIVE */
-@media(max-width:1024px){
-  .roi-content{
+.slides {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide {
+  display: flex;
+  gap: 24px;
+  min-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.left {
+  width: 22%;
+  text-align: center;
+}
+
+.photo {
+  width: 80px;
+  height: 80px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.role,
+.location {
+  font-size: 14px;
+  color: #666;
+}
+
+.center {
+  width: 40%;
+}
+
+.center p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.right {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+}
+
+.inbox {
+  font-size: 14px;
+  color: #555;
+}
+
+/* SLIDER LOGIC */
+#t1:checked ~ .slider-wrapper .slides {
+  transform: translateX(0%);
+}
+#t2:checked ~ .slider-wrapper .slides {
+  transform: translateX(-100%);
+}
+#t3:checked ~ .slider-wrapper .slides {
+  transform: translateX(-200%);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .slide {
     flex-direction: column;
-    align-items: center;
   }
-  .roi-left, .roi-right{
-    margin-bottom: 30px;
+
+  .left, .center, .right {
+    width: 100%;
+  }
+
+  .arrow {
+    font-size: 32px;
   }
 }
 
