@@ -322,7 +322,7 @@ body{
 
 /* CTA below testimonials */
 .testimonial-cta {
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,7 +348,7 @@ body{
 /* TESTIMONIAL SECTION */
 .testimonial-section {
   background: #f8f8f8;
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 .testimonial-container {
