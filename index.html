@@ -2,6 +2,70 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Add this in <head> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* --------- Mobile Optimization --------- */
+
+/* Ensure full width and proper scaling */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Make images responsive */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Containers should fit mobile screens */
+.container, .wrapper, .content {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/* Stack columns vertically on mobile */
+.row, .columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > * , .columns > * {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+}
+
+/* Typography for mobile */
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.2em; }
+p { font-size: 1em; line-height: 1.5em; }
+
+/* Buttons & links */
+button, a.button, .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    body { font-size: 14px; }
+    .container { padding: 0 5px; }
+    .header, .footer, nav { text-align: center; }
+    .menu, .nav-links { display: block; }
+}
+</style>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>EstateSpark — Real Estate Copywriting (Austin, TX)</title>
