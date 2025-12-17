@@ -434,606 +434,184 @@ body{
   }
 }
 
-
-/* PACKAGE SECTION */
-.package-section {
-  background: #ffe2e6;
-  padding: 90px 20px;
-  display: flex;
-  justify-content: center;
+/* ===== ZERO-WORK SECTION ===== */
+.zero-work-section {
+  background: #0a0a0a; /* deep black luxury */
+  padding: 120px 20px;
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.package-container {
-  max-width: 900px;
-  text-align: center;
-  color: #000;
-}
-
-.package-label {
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #D4AF37;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-.package-heading {
-  font-family: "Georgia", "Lora", serif;
-  font-size: 36px;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-.gold-line {
-  width: 70px;
-  height: 3px;
-  background: #D4AF37;
-  margin: 0 auto 40px auto;
-  border-radius: 2px;
-}
-
-.package-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 750px;
-  text-align: left;
-}
-
-.package-list li {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 18px;
-  font-family: "Segoe UI", Lora, sans-serif;
-  font-weight: 400;
-}
-
-.package-list strong {
-  font-weight: 600;
-  color: #000;
-}
-/* --- CTA Section --- */
-.cta-section {
-  background: #000;           /* Full black background */
-  color: #fff;                /* White text */
-  padding: 80px 20px;         /* Top/Bottom 80px, sides 20px */
-  text-align: center;         /* Center content */
-  width: 100%;                /* Ensure full-width */
-}
-
-.cta-container {
-  max-width: 700px;           /* Max content width */
-  margin: 0 auto;             /* Center container horizontally */
-}
-
-.cta-heading {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.cta-subtext {
-  font-size: 18px;
-  opacity: 0.85;
-  margin-bottom: 35px;
-  line-height: 1.6;
-}
-
-/* --- CTA Button --- */
-.cta-btn {
-  display: inline-block;
-  background: #fff;           /* White background */
-  color: #000;                /* Black text */
-  padding: 16px 40px;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 8px;
-  border: 2px solid #d4af37; /* Premium gold border */
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  box-shadow: 0 0 0 rgba(0,0,0,0);
-}
-
-.cta-btn:hover {
-  background: #d4af37;        /* Gold fill on hover */
-  color: #000;                /* Keep text black */
-  box-shadow: 0 6px 28px rgba(212, 175, 55, 0.45); /* subtle gold glow */
-  transform: translateY(-2px);
-}
-
-
-
-/* PRICING SECTION */
-.pricing-section {
-  background: #ffffff;
-  padding: 80px 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.pricing-container {
-  max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-/* LEFT SIDE */
-.pricing-left {
-  flex: 1 1 500px;
-}
-
-.pricing-heading {
-  font-family: "Georgia", "Lora", serif;
-  font-size: 36px;
-  font-weight: 700;
-  text-align: left;
-  margin-bottom: 15px;
-}
-
-.gold-line {
-  width: 70px;
-  height: 3px;
-  background: #d4af37;
-  margin: 15px 0 25px 0;
-  border-radius: 2px;
-}
-
-.pricing-subheading {
-  font-family: "Georgia", "Lora", serif;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-
-.pricing-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 35px;
-}
-
-.pricing-list li {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  font-family: "Segoe UI", Arial, sans-serif;
-}
-
-.pricing-list strong {
-  font-weight: 600;
-}
-
-/* RIGHT SIDE */
-.pricing-right {
-  flex: 1 1 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-}
-
-.pricing-badge {
-  text-align: center;
-  background: #000000;
-  color: #ffffff;
-  padding: 25px 20px;
-  border-radius: 15px;
-  width: 100%;
-  max-width: 300px;
-  box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
-}
-
-.savings-text {
-  font-size: 18px;
-  font-weight: 600;
-  color: #d4af37;
-  margin-bottom: 10px;
-}
-
-.offer-price {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.pricing-proof {
-  width: 100%;
-  max-width: 300px;
-  border: 2px solid #d4af37;
-  border-radius: 12px;
-}
-
-/* CTA button uses global class .cta already defined */
-
-/* TESTIMONIAL SECTION */
-.testimonial-section {
-  background: #f8f8f8;
-  padding: 80px 20px;
-}
-
-.testimonial-container {
-  max-width: 1200px;
+.zero-work-container {
+  max-width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
 
-.testimonial-heading {
-  font-family: "Georgia", "Lora", serif;
-  font-size: 36px;
+/* Headline & Subheadline */
+.zero-work-headline {
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  line-height: 1.1;
+  margin-bottom: 24px;
 }
 
-.gold-line {
-  width: 70px;
-  height: 3px;
-  background: #d4af37;
-  margin: 0 auto 40px auto;
-  border-radius: 2px;
-}
-
-/* Layout */
-.testimonial-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-  align-items: flex-start;
-}
-
-/* LEFT: Client Photo + Info */
-.testimonial-left {
-  flex: 1 1 200px;
-  text-align: center;
-}
-
-.client-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.client-name {
-  font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-
-.client-role,
-.client-address {
-  font-size: 16px;
-  color: #555;
-  margin: 0;
-}
-
-/* CENTER: Bullets */
-.testimonial-center {
-  flex: 2 1 400px;
-}
-
-.testimonial-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
-.testimonial-list li {
-  font-size: 18px;
+.zero-work-subheadline {
+  font-size: 1.3rem;
+  color: #d8d8d8;
+  margin-bottom: 60px;
   line-height: 1.6;
-  margin-bottom: 15px;
 }
 
-.testimonial-list strong {
-  color: #000;
+/* Steps Grid */
+.zero-work-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-bottom: 60px;
 }
 
-/* RIGHT: CRM Proof */
-.testimonial-right {
-  flex: 1 1 200px;
-  text-align: center;
-}
-
-.crm-proof {
-  width: 100%;
-  max-width: 250px;
-  border: 2px solid #d4af37;
-  border-radius: 12px;
-}
-/* CTA Below - Fully Centered */
-.testimonial-cta {
-  display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center;     /* vertical center */
-  height: 100vh;           /* full viewport height */
-  text-align: center;      /* centers multi-line text inside */
-}
-
-
-/* HOW I WORK SECTION */
-.how-i-work-section {
-  background: #ffffff;
-  padding: 80px 20px;
-  font-family: "Segoe UI", Arial, sans-serif;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.how-heading {
-  font-family: "Georgia", "Lora", serif;
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.gold-line {
-  width: 70px;
-  height: 3px;
-  background: #d4af37;
-  margin: 0 auto 30px auto;
-  border-radius: 2px;
-}
-
-.how-subheading {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 50px;
-}
-
-/* 3 Columns Layout */
-.how-columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+/* Step Card */
+.step-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(201,168,106,0.25);
+  border-radius: 18px;
+  padding: 28px 24px;
   text-align: left;
-}
-
-.how-column {
-  flex: 1 1 300px;
-  background: #f9f9f9;
-  padding: 25px 20px;
-  border-radius: 12px;
-  box-shadow: 0 5px 25px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 15px 40px rgba(201,168,106,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.how-column:hover {
+.step-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 35px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 25px 60px rgba(201,168,106,0.2);
 }
 
-.column-title {
-  font-family: "Georgia", "Lora", serif;
-  font-size: 22px;
+/* Step Number */
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: #c9a86a;
+  color: #0a0a0a;
   font-weight: 700;
-  color: #d4af37; /* Gold title */
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
 }
 
-.column-list {
-  list-style: none;
-  padding: 0;
+/* Step Title */
+.step-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #fff;
 }
 
-.column-list li {
-  font-size: 16px;
+/* Step Copy */
+.step-copy {
+  font-size: 1rem;
+  color: #d8d8d8;
   line-height: 1.6;
-  margin-bottom: 12px;
 }
 
-.column-list strong {
-  color: #000;
-} 
-
-/* Hero Section - Portfolio Page */
-.portfolio-hero {
-  background-color: #000000; /* Black background */
-  color: #ffffff; /* White text */
-  padding: 120px 20px;
-  text-align: center;
-}
-
-.portfolio-hero-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.portfolio-hero-headline {
-  font-family: "Georgia", "Lora", serif;
-  font-size: 32px;
-  line-height: 1.4;
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-
-.portfolio-hero-cta {
-  display: inline-block;
-  background: #d4af37; /* Golden button */
-  color: #000000;
-  font-weight: 700;
-  font-size: 18px;
-  text-decoration: none;
-  padding: 16px 40px;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-}
-
-.portfolio-hero-cta:hover {
-  background: #ffd700; /* lighter gold on hover */
-  color: #000000;
-  transform: translateY(-3px);
-}
-
-/* FINAL CTA */
-.final-cta-section {
-  background: #000000;
-  color: #ffffff;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.final-cta-heading {
-  font-family: "Georgia", "Lora", serif;
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.final-cta-subheading {
-  font-size: 18px;
-  margin-bottom: 35px;
-}
-
-.cta-gold {
-  display: inline-block;
-  background: #d4af37;
-  color: #000;
-  padding: 18px 40px;
-  font-weight: 700;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.cta-gold:hover {
-  background: #ffd700;
-  color: #000;
-  transform: translateY(-3px);
-}
-
-/* Hero Image / Golden Logo */
-.final-cta-image img {
-  margin-top: 50px;
-  max-width: 500px;
-  width: 100%;
-  filter: drop-shadow(0 0 15px #d4af37);
-  transition: filter 0.3s ease;
-}
-
-.final-cta-image img:hover {
-  filter: drop-shadow(0 0 30px #ffd700);
-}
-
-/* Trusted Line */
-.trusted-line {
-  margin-top: 25px;
-  font-size: 18px;
-  color: #d4af37;
+/* Gold Highlights */
+.gold {
+  color: #c9a86a;
   font-weight: 600;
 }
 
-/* FOOTER */
-.site-footer {
-  background: #111111;
-  color: #ffffff;
-  padding: 50px 20px 30px 20px;
-  text-align: left;
-  font-family: "Segoe UI", Arial, sans-serif;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-links, .footer-contact, .footer-social {
-  flex: 1 1 200px;
-}
-
-.footer-links ul, .footer-social ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li, .footer-social li {
-  margin-bottom: 10px;
-}
-
-.footer-links a, .footer-social a, .footer-contact a {
-  color: #d4af37;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.footer-links a:hover, .footer-social a:hover, .footer-contact a:hover {
-  color: #ffd700;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 14px;
-  color: #888888;
-}
-
-
-/* --- Restore All CTA Buttons --- */
-.cta, .cta-btn {
+/* CTA */
+.zero-work-cta {
   display: inline-block;
-  padding: 16px 40px;
-  font-size: 18px;
+  background: linear-gradient(135deg, #c9a86a, #b89657);
+  color: #0a0a0a;
+  padding: 20px 40px;
+  border-radius: 12px;
   font-weight: 700;
+  font-size: 1.15rem;
   text-decoration: none;
-  border-radius: 50px;          /* Rounded button */
-  border: 2px solid #d4af37;    /* Gold border */
-  background: #fff;              /* Default white background */
-  color: #000;                   /* Default black text */
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  text-align: center;
-  box-shadow: 0 0 0 rgba(0,0,0,0);
+  box-shadow: 0 20px 50px rgba(201,168,106,0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin-bottom: 20px;
 }
 
-/* --- Hover effect for all CTA buttons --- */
-.cta:hover, .cta-btn:hover {
-  background: #d4af37;           /* Gold fill on hover */
-  color: #000;                    /* Keep text black */
-  box-shadow: 0 6px 28px rgba(212, 175, 55, 0.45); /* subtle gold glow */
+.zero-work-cta:hover {
   transform: translateY(-2px);
+  box-shadow: 0 28px 60px rgba(201,168,106,0.45);
 }
 
-/* --- Optional variants --- */
-.cta-white { background: #fff; color: #000; border: 2px solid #d4af37; }
-.cta-black { background: #000; color: #fff; border: 2px solid #d4af37; }
-.cta-gold { background: #d4af37; color: #000; border: 2px solid #d4af37; }
-
-.cta-white:hover, .cta-black:hover { background: #d4af37; color: #000; }
-.cta-gold:hover { background: #fff; color: #000; }
-
-
-/* --- Hero Section CTA Styling --- */
-.hero .cta-btn {
-  display: inline-block;
-  padding: 18px 42px;
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 50px;
-  border: 2px solid #d4af37;   /* Gold border */
-  background: #fff;             /* White background */
-  color: #000;                  /* Black text */
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  text-align: center;
-  box-shadow: 0 0 0 rgba(0,0,0,0);
+/* Trust line */
+.zero-work-trust {
+  font-size: 0.95rem;
+  color: #bdbdbd;
+  margin-top: 12px;
 }
 
-/* --- Hover Effect --- */
-.hero .cta-btn:hover {
-  background: #d4af37;          /* Gold fill on hover */
-  color: #000;                   /* Keep text black */
-  transform: translateY(-2px);
-  box-shadow: 0 6px 28px rgba(212, 175, 55, 0.45); /* subtle gold glow */
+/* ===== MOBILE OPTIMIZATION: ZERO-WORK SECTION ===== */
+@media (max-width: 768px) {
+
+  .zero-work-container {
+    padding: 60px 16px; /* generous spacing but mobile-friendly */
+  }
+
+  /* Headline & Subheadline scaling */
+  .zero-work-headline {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .zero-work-subheadline {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+  /* Steps Grid stacks vertically */
+  .zero-work-steps {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  /* Step Card */
+  .step-card {
+    padding: 24px 18px;
+    border-radius: 16px;
+  }
+
+  /* Step Number */
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+
+  /* Step Title */
+  .step-title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  /* Step Copy */
+  .step-copy {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* CTA Button */
+  .zero-work-cta {
+    width: 100%;
+    padding: 18px 0;
+    font-size: 1.05rem;
+    border-radius: 10px;
+  }
+
+  /* Trust line */
+  .zero-work-trust {
+    font-size: 0.9rem;
+    margin-top: 14px;
+  }
 }
