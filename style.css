@@ -53,7 +53,7 @@ body{
   opacity: 0.9;
 }
 /* --- HERO SECTION MAIN CTA GOLD HOVER --- */
-.hero .cta-btn {
+.hero .cta-btn }
   background: #000; /* black base */
   color: #fff; /* white text */
   padding: 16px 32px;
@@ -84,6 +84,69 @@ body{
   height: 260px;
   border-radius: 8px;
 }
+
+/* ===== PAIN SECTION ===== */
+.the-pain-section {
+  background: #0b0b0b;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.pain-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Eyebrow */
+.pain-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9c9c9c;
+  margin-bottom: 18px;
+}
+
+/* Headline */
+.pain-headline {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 30px;
+}
+
+.pain-headline span {
+  color: #c9a86a; /* gold accent */
+}
+
+/* Body Copy */
+.pain-copy {
+  font-size: 1.15rem;
+  color: #d0d0d0;
+  max-width: 760px;
+  margin: 0 auto 18px;
+  line-height: 1.6;
+}
+
+/* Gold Emphasis */
+.gold {
+  color: #c9a86a;
+  font-weight: 600;
+}
+
+/* Closing Line */
+.pain-closing {
+  margin-top: 36px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.pain-closing span {
+  color: #c9a86a;
+}
+
 
 /* ===== AUTHORITY SECTION ===== */
 .authority-section {
