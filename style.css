@@ -85,6 +85,93 @@ body{
   border-radius: 8px;
 }
 
+/* ===== AUTHORITY SECTION ===== */
+.authority-section {
+  background: #0b0b0b;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.authority-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Eyebrow */
+.authority-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9c9c9c;
+  margin-bottom: 18px;
+}
+
+/* Headline */
+.authority-headline {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.authority-headline span {
+  color: #c9a86a; /* luxury gold */
+}
+
+/* Copy */
+.authority-copy {
+  font-size: 1.15rem;
+  color: #d0d0d0;
+  max-width: 760px;
+  margin: 0 auto 48px;
+  line-height: 1.6;
+}
+
+/* Grid */
+.authority-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+/* Market Cards */
+.market-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 22px 18px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+}
+
+.market-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(201,168,106,0.5);
+}
+
+/* Quote */
+.authority-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #cfcfcf;
+  max-width: 820px;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.authority-quote span {
+  color: #c9a86a;
+  font-weight: 600;
+}
+
 /* ABOUT / STORY SECTION */
 .about-section {
   background: linear-gradient(135deg, #2b2b2b, #3a3a3a); /* subtle premium gradient */
