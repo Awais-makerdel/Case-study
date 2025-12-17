@@ -26,64 +26,114 @@ body{
 .nav-links a:hover{background:rgba(255,255,255,0.06)}
 .nav-links .cta{background:#fff;color:#000;padding:8px 12px;border-radius:10px;font-weight:600}
 .nav-toggle{display:none;background:none;border:0;color:#fff;font-size:20px}
-.hero {
-  width: 90%;
-  max-width: 1200px;
-  margin: 70px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
+
+/* ===== HERO LUXURY ===== */
+.hero-luxury {
+  position: relative;
+  padding: 120px 20px;
+  background:
+    url("luxury-property.jpg") center / cover no-repeat,
+    linear-gradient(135deg, #f6f3ee, #efe9df);
+  color: #1a1a1a;
 }
 
-.hero-left {
-  flex: 1;
+/* Soft overlay for readability */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(2px);
 }
 
+/* Container */
+.hero-container {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Eyebrow */
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #8c7a55;
+  margin-bottom: 22px;
+}
+
+/* Headline */
 .hero-headline {
-  font-size: 36px;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 20px;
+  font-size: 3.2rem;
+  font-weight: 720;
+  line-height: 1.08;
+  margin-bottom: 28px;
 }
 
-.hero-sub {
-  font-size: 18px;
-  margin-bottom: 30px;
-  opacity: 0.9;
-}
-/* --- HERO SECTION MAIN CTA GOLD HOVER --- */
-.hero .cta-btn }
-  background: #000; /* black base */
-  color: #fff; /* white text */
-  padding: 16px 32px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 8px;
-  text-decoration: none;
-  border: 2px solid #d4af37; /* golden border */
-  transition: all 0.3s ease-in-out;
+.hero-headline span {
+  color: #c9a86a; /* luxury gold */
 }
 
-.hero .cta-btn:hover {
-  background: #d4af37; /* gold fill on hover */
-  color: #000; /* black text on hover */
-  transform: translateY(-3px); /* subtle lift */
-  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4); /* golden glow */
+/* Subheadline */
+.hero-subheadline {
+  font-size: 1.35rem;
+  color: #333;
+  line-height: 1.55;
+  max-width: 760px;
+  margin: 0 auto 46px;
 }
 
-
-
-/* RIGHT SIDE VSL */
-.hero-right {
-  flex: 0.8;
+/* VSL Container — glass effect */
+.hero-vsl {
+  margin: 0 auto 42px;
+  max-width: 760px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(201,168,106,0.35);
+  backdrop-filter: blur(8px);
 }
 
-.vsl-box iframe {
+.vsl-frame {
   width: 100%;
-  height: 260px;
-  border-radius: 8px;
+  height: 400px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #e8e8e8, #d9d9d9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #555;
 }
+
+/* CTA */
+.hero-cta {
+  display: inline-block;
+  padding: 18px 34px;
+  background: linear-gradient(135deg, #c9a86a, #b89657);
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: 0 18px 40px rgba(201,168,106,0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 50px rgba(201,168,106,0.45);
+}
+
+/* Trust line */
+.hero-trust {
+  margin-top: 22px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
 
 /* ===== PAIN SECTION ===== */
 .the-pain-section {
