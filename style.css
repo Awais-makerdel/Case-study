@@ -135,67 +135,131 @@ body{
 }
 
 
-/* ===== PAIN SECTION ===== */
-.the-pain-section {
-  background: #0b0b0b;
-  padding: 100px 20px;
-  color: #fff;
-}
-
-.pain-container {
-  max-width: 900px;
-  margin: 0 auto;
+/* ===== PACKAGE SECTION: LUXURY PROPERTY BACKGROUND ===== */
+.package-section {
+  position: relative;
+  background: url('luxury-property.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
+  color: #1a1a1a; /* dark text on light overlay */
 }
 
-/* Eyebrow */
-.pain-eyebrow {
-  display: inline-block;
-  font-size: 0.8rem;
-  letter-spacing: 0.18em;
+.package-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 248, 240, 0.9); /* cream overlay for readability */
+  z-index: 0;
+  backdrop-filter: blur(10px);
+}
+
+.package-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Labels & Headings */
+.package-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #c9a86a;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
   text-transform: uppercase;
-  color: #9c9c9c;
-  margin-bottom: 18px;
 }
 
-/* Headline */
-.pain-headline {
-  font-size: 2.6rem;
+.package-heading {
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1.15;
-  margin-bottom: 30px;
+  color: #222;
+  margin-bottom: 12px;
 }
 
-.pain-headline span {
-  color: #c9a86a; /* gold accent */
-}
-
-/* Body Copy */
-.pain-copy {
-  font-size: 1.15rem;
-  color: #d0d0d0;
-  max-width: 760px;
-  margin: 0 auto 18px;
+.package-subheading {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 40px;
   line-height: 1.6;
 }
 
-/* Gold Emphasis */
-.gold {
-  color: #c9a86a;
-  font-weight: 600;
+/* Gold Line */
+.gold-line {
+  width: 60px;
+  height: 4px;
+  background: #c9a86a;
+  margin: 0 auto 24px auto;
+  border-radius: 2px;
 }
 
-/* Closing Line */
-.pain-closing {
-  margin-top: 36px;
-  font-size: 1.25rem;
-  font-weight: 600;
+/* Package List */
+.package-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 50px 0;
+  text-align: left;
+}
+
+.package-list li {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.package-list li strong {
+  color: #c9a86a;
+  font-weight: 700;
+}
+
+/* CTA Button */
+.cta-proof-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta-proof-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #c9a86a, #b89657);
   color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 20px 50px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(201,168,106,0.35);
+  transition: all 0.3s ease;
 }
 
-.pain-closing span {
-  color: #c9a86a;
+.cta-proof-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 28px 60px rgba(201,168,106,0.45);
 }
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 768px) {
+  .package-heading {
+    font-size: 2rem;
+  }
+  .package-subheading {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  .package-list li {
+    font-size: 0.95rem;
+  }
+  .cta-proof-button {
+    width: 100%;
+    padding: 18px 0;
+    font-size: 1rem;
+  }
+}
+
 
 
 /* ===== AUTHORITY SECTION ===== */
@@ -1029,19 +1093,21 @@ body{
 
 /* Copy text */
 .competitive-text {
-  font-size: 1.05rem;
-  line-height: 1.8;
+  font-size: 1.05rem;              /* readable size on all screens */
+  line-height: 1.8;                /* luxury spacing for readability */
   margin-bottom: 40px;
-  color: #f5d07f;
+  color: #e6e6e6;                  /* soft, premium off-white for main text */
   text-align: left;
-  text-shadow: 0 0 6px rgba(245,208,127,0.2);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.5px;           /* adds sophistication */
+  text-shadow: 0 0 4px rgba(0,0,0,0.2); /* subtle depth without looking cheap */
 }
 
-/* Highlight bold */
+/* Highlight bold text */
 .competitive-text strong {
-  color: #ffd77f;
+  color: #f5d07f;                  /* gold highlight for emphasis */
   font-weight: 700;
-  text-shadow: 0 0 8px rgba(255,215,127,0.5);
+  text-shadow: 0 0 6px rgba(245,208,127,0.3); /* subtle golden glow */
 }
 
 /* Mobile optimization */
