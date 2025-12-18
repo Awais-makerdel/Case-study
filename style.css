@@ -889,68 +889,109 @@ body{
   }
 }
 
-/* ===== URGENCY CTA — LUXURY ===== */
-.urgency-cta-section {
-  padding: 70px 20px 90px;
-  text-align: center;
-  background: linear-gradient(180deg, #f7f5f0, #ffffff);
+/* ===== COMPETITIVE ULTIMATUM — LUXURY SECTION ===== */
+.competitive-ultimatum {
+  background: linear-gradient(180deg, #f7f6f3 0%, #ffffff 100%);
+  padding: 120px 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
 }
 
-.urgency-cta-headline {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #111;
-  max-width: 720px;
-  margin: 0 auto 34px;
-  line-height: 1.35;
+.ultimatum-container {
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-/* CTA Button */
-.urgency-cta-button {
-  display: inline-block;
-  padding: 18px 42px;
-  font-size: 1.05rem;
+.ultimatum-headline {
+  font-size: 2.8rem;
   font-weight: 700;
-  letter-spacing: 0.03em;
-  color: #111;
-  background: linear-gradient(135deg, #c9a86a, #b89657);
-  border-radius: 14px;
-  text-decoration: none;
-  box-shadow: 0 22px 50px rgba(201,168,106,0.35);
-  animation: luxuryPulse 1.6s infinite;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  letter-spacing: -0.02em;
 }
 
-.urgency-cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 30px 70px rgba(201,168,106,0.45);
+.ultimatum-subheadline {
+  font-size: 1.35rem;
+  color: #4a4a4a;
+  margin-bottom: 50px;
+  line-height: 1.5;
 }
 
-/* Subtle Luxury Pulse (Not Spammy) */
-@keyframes luxuryPulse {
-  0% {
-    box-shadow: 0 22px 50px rgba(201,168,106,0.35);
-  }
-  50% {
-    box-shadow: 0 28px 70px rgba(201,168,106,0.55);
-  }
-  100% {
-    box-shadow: 0 22px 50px rgba(201,168,106,0.35);
-  }
+.ultimatum-divider {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, #c9a86a, #b89657);
+  margin-bottom: 50px;
 }
 
-/* Mobile */
+.ultimatum-block {
+  margin-bottom: 46px;
+}
+
+.ultimatum-label {
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #b89657;
+  margin-bottom: 16px;
+}
+
+.ultimatum-text {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: #2a2a2a;
+  margin-bottom: 18px;
+}
+
+.ultimatum-text strong {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.ultimatum-quote {
+  margin-top: 70px;
+  padding: 36px 40px;
+  background: #ffffff;
+  border-left: 4px solid #c9a86a;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+}
+
+.ultimatum-quote p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #1f1f1f;
+  margin-bottom: 14px;
+}
+
+.quote-attribution {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #6a6a6a;
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
 @media (max-width: 768px) {
-  .urgency-cta-headline {
-    font-size: 1.45rem;
-    margin-bottom: 28px;
+  .competitive-ultimatum {
+    padding: 80px 18px;
   }
 
-  .urgency-cta-button {
-    width: 100%;
-    max-width: 320px;
-    padding: 18px 0;
+  .ultimatum-headline {
+    font-size: 2.1rem;
+  }
+
+  .ultimatum-subheadline {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+
+  .ultimatum-text {
+    font-size: 1rem;
+  }
+
+  .ultimatum-quote {
+    padding: 28px 22px;
   }
 }
 
