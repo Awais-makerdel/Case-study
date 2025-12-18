@@ -889,3 +889,68 @@ body{
   }
 }
 
+/* ===== URGENCY CTA — LUXURY ===== */
+.urgency-cta-section {
+  padding: 70px 20px 90px;
+  text-align: center;
+  background: linear-gradient(180deg, #f7f5f0, #ffffff);
+}
+
+.urgency-cta-headline {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #111;
+  max-width: 720px;
+  margin: 0 auto 34px;
+  line-height: 1.35;
+}
+
+/* CTA Button */
+.urgency-cta-button {
+  display: inline-block;
+  padding: 18px 42px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #111;
+  background: linear-gradient(135deg, #c9a86a, #b89657);
+  border-radius: 14px;
+  text-decoration: none;
+  box-shadow: 0 22px 50px rgba(201,168,106,0.35);
+  animation: luxuryPulse 1.6s infinite;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.urgency-cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 30px 70px rgba(201,168,106,0.45);
+}
+
+/* Subtle Luxury Pulse (Not Spammy) */
+@keyframes luxuryPulse {
+  0% {
+    box-shadow: 0 22px 50px rgba(201,168,106,0.35);
+  }
+  50% {
+    box-shadow: 0 28px 70px rgba(201,168,106,0.55);
+  }
+  100% {
+    box-shadow: 0 22px 50px rgba(201,168,106,0.35);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .urgency-cta-headline {
+    font-size: 1.45rem;
+    margin-bottom: 28px;
+  }
+
+  .urgency-cta-button {
+    width: 100%;
+    max-width: 320px;
+    padding: 18px 0;
+  }
+}
+
