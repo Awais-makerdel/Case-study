@@ -557,38 +557,29 @@ button, a.button, .btn {
   </div>
 </section>
 
-<!-- JS for smooth carousel -->
+<!-- JS for Section 8 Carousel -->
 <script>
+  const carouselWrapper = document.querySelector('.ledger-carousel-wrapper');
   const carousel = document.querySelector('.ledger-carousel');
   const cards = document.querySelectorAll('.ledger-card');
   const prevBtn = document.getElementById('ledger-prev');
   const nextBtn = document.getElementById('ledger-next');
-  let currentIndex = 0;
+  let index = 0;
 
-  function updateCarousel() {
-    const cardWidth = cards[0].offsetWidth + 40; // 40px gap
-    carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  function showCard(i) {
+    const cardWidth = cards[0].offsetWidth;
+    carousel.style.transform = `translateX(-${i * cardWidth}px)`;
   }
 
   prevBtn.addEventListener('click', () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateCarousel();
-    }
+    if(index > 0) index--;
+    showCard(index);
   });
 
   nextBtn.addEventListener('click', () => {
-    if (currentIndex < cards.length - 1) {
-      currentIndex++;
-      updateCarousel();
-    }
+    if(index < cards.length - 1) index++;
+    showCard(index);
   });
 
-  window.addEventListener('resize', updateCarousel);
+  window.addEventListener('resize', () => showCard(index));
 </script>
-
-
-
-
-    
-   
