@@ -994,3 +994,98 @@ body{
     padding: 28px 22px;
   }
 }
+
+/* ===== THE COMPETITIVE ULTIMATUM ===== */
+.competitive-ultimatum-section {
+  background: url('luxury-property-bg.jpg') center/cover no-repeat;
+  padding: 100px 20px;
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.competitive-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Headline & Subheadline */
+.competitive-headline {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #f5d07f;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.competitive-subheadline {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+/* Boxes for hierarchy */
+.competitive-box {
+  background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(245,208,127,0.4);
+  border-left: 6px solid #f5d07f;
+  border-radius: 12px;
+  padding: 28px 24px;
+  margin-bottom: 30px;
+  text-align: left;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.competitive-box-title {
+  font-size: 1.4rem;
+  color: #f5d07f;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.competitive-box-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #eee;
+}
+
+.competitive-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #eee;
+}
+
+.competitive-list li {
+  margin-bottom: 12px;
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 768px) {
+  .competitive-headline {
+    font-size: 2rem;
+  }
+
+  .competitive-subheadline {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+  }
+
+  .competitive-box {
+    padding: 20px 16px;
+    margin-bottom: 24px;
+  }
+
+  .competitive-box-title {
+    font-size: 1.2rem;
+  }
+
+  .competitive-box-text,
+  .competitive-list li {
+    font-size: 0.95rem;
+  }
+}
+
