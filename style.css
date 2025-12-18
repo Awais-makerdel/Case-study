@@ -134,27 +134,25 @@ body{
   color: #666;
 }
 
-
-/* ===== PACKAGE SECTION: LUXURY PROPERTY BACKGROUND ===== */
 .package-section {
   position: relative;
+  overflow: hidden; /* fixes pseudo-element rendering */
   background: url('luxury-property.jpg') no-repeat center center/cover;
   padding: 80px 20px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #1a1a1a; /* dark text on light overlay */
+  color: #1a1a1a;
 }
 
-.package-section::before {
-  content: "";
+.package-section .package-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 248, 240, 0.9); /* cream overlay for readability */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,248,240,0.9); /* cream overlay */
+  backdrop-filter: blur(8px);
   z-index: 0;
-  backdrop-filter: blur(10px);
 }
 
 .package-container {
@@ -214,7 +212,7 @@ body{
 
 .package-list li strong {
   color: #c9a86a;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* CTA Button */
