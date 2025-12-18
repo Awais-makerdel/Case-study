@@ -683,3 +683,87 @@ body{
     font-size: 0.95rem;
   }
 }
+
+
+.revenue-guarantee-section {
+  background: #fdf7f0; /* soft luxury cream */
+  padding: 100px 20px;
+  color: #1a1a1a;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.revenue-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.revenue-headline {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #b89657; /* golden accent */
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.revenue-subheadline {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.revenue-copy p {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.alex-position {
+  font-style: italic;
+  font-weight: 600;
+  color: #b89657;
+  font-size: 1.05rem;
+  margin-top: 20px;
+}
+
+.revenue-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #c9a86a, #b89657);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 18px 40px;
+  border-radius: 12px;
+  text-decoration: none;
+  margin-top: 40px;
+  box-shadow: 0 20px 50px rgba(201,168,106,0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.revenue-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 28px 60px rgba(201,168,106,0.45);
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .revenue-headline {
+    font-size: 2.2rem;
+  }
+  .revenue-subheadline {
+    font-size: 1.15rem;
+    margin-bottom: 35px;
+  }
+  .revenue-copy p,
+  .alex-position {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .revenue-cta {
+    width: 100%;
+    font-size: 1.05rem;
+    padding: 16px 0;
+  }
+}
