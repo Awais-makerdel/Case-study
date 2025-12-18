@@ -684,28 +684,32 @@ body{
   }
 }
 
-
 .revenue-guarantee-section {
-  background: #fdf7f0; /* soft luxury cream */
-  padding: 100px 20px;
+  position: relative;
+  background: url('luxury-property.jpg') center/cover no-repeat;
+  padding: 120px 20px;
   color: #1a1a1a;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Merriweather', serif;
   text-align: center;
+  overflow: hidden;
 }
 
-.revenue-container {
+.revenue-bg-overlay {
+  background: rgba(253, 247, 240, 0.85); /* semi-transparent cream overlay */
+  padding: 80px 20px;
+  border-radius: 20px;
   max-width: 900px;
   margin: 0 auto;
 }
 
+/* Headline & Subheadline */
 .revenue-headline {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #b89657; /* golden accent */
+  color: #b89657;
   margin-bottom: 24px;
   line-height: 1.2;
 }
-
 .revenue-subheadline {
   font-size: 1.35rem;
   font-weight: 500;
@@ -713,21 +717,28 @@ body{
   margin-bottom: 50px;
 }
 
+/* Copy */
 .revenue-copy p {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: #333;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.gold {
+  color: #b89657;
+  font-weight: 600;
 }
 
 .alex-position {
   font-style: italic;
   font-weight: 600;
+  font-size: 1.1rem;
   color: #b89657;
-  font-size: 1.05rem;
   margin-top: 20px;
 }
 
+/* CTA */
 .revenue-cta {
   display: inline-block;
   background: linear-gradient(135deg, #c9a86a, #b89657);
@@ -741,7 +752,6 @@ body{
   box-shadow: 0 20px 50px rgba(201,168,106,0.35);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .revenue-cta:hover {
   transform: translateY(-3px);
   box-shadow: 0 28px 60px rgba(201,168,106,0.45);
@@ -749,6 +759,9 @@ body{
 
 /* Mobile Optimization */
 @media (max-width: 768px) {
+  .revenue-bg-overlay {
+    padding: 50px 16px;
+  }
   .revenue-headline {
     font-size: 2.2rem;
   }
@@ -756,8 +769,7 @@ body{
     font-size: 1.15rem;
     margin-bottom: 35px;
   }
-  .revenue-copy p,
-  .alex-position {
+  .revenue-copy p, .alex-position {
     font-size: 1rem;
     line-height: 1.5;
   }
@@ -767,3 +779,4 @@ body{
     padding: 16px 0;
   }
 }
+
