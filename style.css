@@ -780,3 +780,112 @@ body{
   }
 }
 
+
+/* ===== LIVE STATUS TICKER — LUXURY ===== */
+.live-ticker-section {
+  background: linear-gradient(180deg, #faf9f7, #f2efe9);
+  padding: 100px 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.live-ticker-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.live-ticker-headline {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+.live-ticker-subheadline {
+  font-size: 1.15rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto 60px;
+}
+
+/* Board */
+.ticker-board {
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.ticker-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  font-size: 1.05rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ticker-fire {
+  font-size: 1.2rem;
+}
+
+.ticker-zip {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.ticker-area {
+  color: #666;
+  font-style: italic;
+}
+
+.ticker-status {
+  font-weight: 600;
+}
+
+.gold {
+  color: #b89b5e;
+}
+
+.viewing {
+  color: #9c2c2c;
+}
+
+/* Sold Out */
+.sold-out {
+  opacity: 0.55;
+}
+
+.sold-out .ticker-status {
+  color: #333;
+}
+
+/* Blinking Effect */
+.blinking {
+  animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.55; }
+  100% { opacity: 1; }
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 768px) {
+  .live-ticker-headline {
+    font-size: 2.1rem;
+  }
+
+  .live-ticker-subheadline {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .ticker-row {
+    font-size: 0.95rem;
+    padding: 18px 6px;
+  }
+}
+
