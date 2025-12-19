@@ -1,71 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Checkout / Deal-Closing System</title>
-  
+
   <style>
+    /* GLOBAL */
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
       background-color: #0a0a0a;
       color: #f5f5f5;
     }
 
+    /* =========================
+       LUXURY TESTIMONIAL SECTION
+       ========================= */
+    .lux-testimonials {
+      background: #fff7ee;
+      padding: 64px 20px 80px;
+      position: relative;
+    }
+
+    .lux-testimonials::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: linear-gradient(to bottom, #fff7ee 0%, #0a0a0a 100%);
+    }
+
+    .lux-container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .lux-heading {
+      text-align: center;
+      color: #b8963d;
+      font-size: 2.1rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    .lux-subheading {
+      text-align: center;
+      color: #3a3a3a;
+      font-size: 1.05rem;
+      margin-bottom: 48px;
+    }
+
+    .lux-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .lux-card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 26px 24px;
+      border: 1px solid rgba(184,150,61,0.35);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .lux-card p {
+      margin: 0;
+      color: #1b1b1b;
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+
+    /* =========================
+       CHECKOUT SECTION
+       ========================= */
     .checkout-section {
       max-width: 800px;
-      margin: 80px auto;
-      padding: 40px;
+      margin: 0 auto 100px;
+      padding: 56px 28px 60px;
       background: #111;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
       text-align: center;
     }
 
     .checkout-section h1 {
       font-size: 2rem;
       color: #FFD700;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
+      letter-spacing: 0.4px;
     }
 
     .checkout-section p {
-      font-size: 1.1rem;
-      margin-bottom: 40px;
+      font-size: 1.08rem;
+      margin-bottom: 42px;
+      color: #d6d6d6;
+      line-height: 1.6;
     }
 
     .checkout-button {
-      background: #FFD700;
+      display: inline-block;
+      background: linear-gradient(135deg, #FFD700, #e6c200);
       color: #0a0a0a;
       font-weight: 700;
-      padding: 18px 40px;
-      border-radius: 8px;
-      font-size: 1.2rem;
+      padding: 18px 44px;
+      border-radius: 10px;
+      font-size: 1.15rem;
       text-decoration: none;
-      transition: background 0.3s ease, transform 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 30px rgba(255,215,0,0.25);
     }
 
     .checkout-button:hover {
-      background: #e6c200;
       transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(255,215,0,0.35);
     }
 
     .small-note {
       font-size: 0.9rem;
-      color: #ccc;
-      margin-top: 20px;
+      color: #aaa;
+      margin-top: 22px;
+    }
+
+    /* =========================
+       DESKTOP ENHANCEMENTS
+       ========================= */
+    @media (min-width: 900px) {
+      .lux-heading {
+        font-size: 2.6rem;
+      }
+
+      .lux-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+      }
+
+      .checkout-section h1 {
+        font-size: 2.4rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
+  <!-- TESTIMONIALS -->
+  <section class="lux-testimonials">
+    <div class="lux-container">
+      <h2 class="lux-heading">Real Results. Real Commissions.</h2>
+      <p class="lux-subheading">This isn’t a cost — it’s a revenue system.</p>
+
+      <div class="lux-grid">
+
+        <div class="lux-card">
+          <p>
+            Working with Alex and Estate Spark has Excellent Experience for my Austin real estate business. He promised results and genuinely over-delivered.
+            <br><br>
+            From a single $250 email sequence campaign, I received 41 qualified leads and secured 7 appointments. This directly led to closing 2 deals worth $780K and earning $12K in commission.
+            <br><br>
+            Alex’s email sequences are not just persuasive—they’re built with real value and a deep understanding of the Austin market
+          </p>
+        </div>
+
+        <div class="lux-card">
+          <p>
+            Working with Alex and Estate Spark was fantastic. They created a custom email sequence tailored to my brand and Austin market.
+            <br><br>
+            From one campaign, I got 30 qualified leads and 4 appointments, which helped me close 1 deal worth $430K and earn $6K in commission. Still Profitable Compared to Cost 250$.
+            <br><br>
+            Alex and Estate Spark stand out for their market knowledge, attention to detail, and sequences that actually convert. If you want a personalized, high-performing strategy, they’re the team to work with.
+          </p>
+        </div>
+
+        <div class="lux-card">
+          <p>
+            I thought Alex’s $250 offer would be just generic templates, but he went above and beyond and made a sequence tailored to my brand and the Austin market.
+            <br><br>
+            The campaign brought 15 leads, 3 appointments, and I closed 1 deal for $320K, earning $5K.
+            <br><br>
+            Alex and Estate Spark are professional, attentive, and deliver sequences that actually work
+          </p>
+        </div>
+
+        <div class="lux-card">
+          <p>
+            At first, I thought Alex’s $250 offer would just deliver generic templates. But he completely exceeded my expectations and created a custom email sequence tailored to my brand and the market.
+            <br><br>
+            From that campaign, I got 67 qualified leads and 13 appointments, which helped me close 4 deal for $1920K and earn $45K in commission.
+            <br><br>
+            Alex and Estate Spark stand out for their professionalism, attention to detail, and sequences that actually get results. If you want leads that convert, they’re the team to work with.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECKOUT -->
   <section class="checkout-section">
     <h1>Secure Your Deal-Closing System</h1>
-    <p>Step into the inner circle of elite agents and unlock your <strong>$45K+ commission system</strong> today. No guesswork, no templates — everything done for you.</p>
+    <p>
+      Step into the inner circle of elite agents and unlock your
+      <strong>$45K+ commission system</strong> today.
+      No guesswork. No templates. Everything done for you.
+    </p>
 
-    <a href="YOUR_PAYMENT_LINK_HERE" class="checkout-button">Complete My Purchase</a>
+    <a href="YOUR_PAYMENT_LINK_HERE" class="checkout-button">
+      Complete My Purchase
+    </a>
 
-    <p class="small-note">Instant access. 100% secure. Limited spots for high-performing agents.</p>
+    <p class="small-note">
+      Instant access · Secure checkout · Limited availability
+    </p>
   </section>
 
 </body>
