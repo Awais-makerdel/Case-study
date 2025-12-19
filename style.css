@@ -204,7 +204,7 @@ body{
 }
 
 .package-list li {
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.7;
   margin-bottom: 16px;
   color: #1a1a1a;
@@ -1129,7 +1129,7 @@ body{
 /* ===== PORTFOLIO OF AUTHORITY SECTION ===== */
 .portfolio-authority-section {
   position: relative;
-  background: url('luxury-austin-home.jpg') center center/cover no-repeat;
+  background: url('images/luxury-home.jpeg') center center/cover no-repeat;
   min-height: 500px;
   display: flex;
   align-items: center;
