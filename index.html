@@ -205,7 +205,74 @@ button, a.button, .btn {
   }
 })();
 </script>
+     <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const OFFSET = document.querySelector(".nav-root")?.offsetHeight || 80;
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
+      if (targetId.length > 1) {
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          const y = target.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }
+    });
+  });
+});
+</script>
+
+    <!-- Global smooth scroll -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const OFFSET = document.querySelector(".nav-root")?.offsetHeight || 80;
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
+      if (targetId.length > 1) {
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          const y =
+            target.getBoundingClientRect().top +
+            window.pageYOffset -
+            OFFSET;
+
+          window.scrollTo({
+            top: y,
+            behavior: "smooth"
+          });
+        }
+      }
+    });
+  });
+});
+</script>
+
+<!-- Close mobile nav after click -->
+<script>
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("navLinks")?.classList.remove("open");
+  });
+});
+</script>
+<script>
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("navLinks")?.classList.remove("open");
+  });
+});
+</script>
+
+</body>
+
 <body>
+
   <!-- NAV -->
   <header class="nav-root" id="top">
     <nav class="nav container">
