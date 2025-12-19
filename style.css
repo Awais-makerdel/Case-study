@@ -1461,25 +1461,93 @@ body{
   line-height: 1.6;
 }
 
+/* ===== FOUNDERS FOOTER — LUXURY BOTTOM BAR ===== */
+
+.founders-footer {
+  position: relative;
+  background: #0f1113; /* deep charcoal, not pure black */
+  border-top: 1px solid rgba(201,168,106,0.25);
+  padding: 28px 20px 22px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Navigation-style layout */
+.footer-links,
+.footer-contact,
+.footer-trust {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+/* Footer links = nav items */
 .founders-footer a {
-  color: #f5d07f;
+  color: #e5e5e5;
   text-decoration: none;
-  margin: 0 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+/* Subtle gold underline on hover (luxury cue) */
+.founders-footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: #c9a86a;
+  transition: width 0.3s ease;
 }
 
 .founders-footer a:hover {
-  text-decoration: underline;
+  color: #c9a86a;
 }
 
-.footer-links, .footer-contact, .footer-trust {
-  margin: 12px 0;
+.founders-footer a:hover::after {
+  width: 100%;
 }
 
+/* Trust icons row */
+.footer-trust {
+  font-size: 0.8rem;
+  color: #b9b9b9;
+  gap: 18px;
+}
+
+/* Timestamp = quiet authority */
 .footer-timestamp {
-  margin-top: 20px;
-  font-size: 0.75rem;
+  margin-top: 18px;
+  text-align: center;
+  font-size: 0.7rem;
   color: #7a7a7a;
+  letter-spacing: 0.4px;
 }
+
+/* ===== MOBILE — NAV BAR FEEL ===== */
+@media (max-width: 768px) {
+
+  .founders-footer {
+    padding: 22px 14px 20px;
+  }
+
+  .footer-links,
+  .footer-contact,
+  .footer-trust {
+    gap: 16px;
+  }
+
+  .founders-footer a {
+    font-size: 0.85rem;
+  }
+}
+
 
 /* ===== MOBILE OPTIMIZATION ===== */
 @media (max-width: 768px) {
