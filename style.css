@@ -204,7 +204,7 @@ body{
 }
 
 .package-list li {
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.7;
   margin-bottom: 16px;
   color: #1a1a1a;
@@ -1129,12 +1129,16 @@ body{
 /* ===== PORTFOLIO OF AUTHORITY SECTION ===== */
 .portfolio-authority-section {
   position: relative;
-  background: url('images/luxury-home.jpeg') center center/cover no-repeat;
+  background-image: url('images/luxury-home.jpeg'); /* ensure path is correct */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .portfolio-overlay {
@@ -1143,46 +1147,48 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10,10,10,0.9); /* dark overlay for golden text visibility */
-  backdrop-filter: blur(12px); /* blur the background image */
+  background: rgba(10, 10, 10, 0.75); /* slightly less opaque for luxury glow */
+  backdrop-filter: blur(8px); /* softer blur for premium feel */
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 20px; /* ensure mobile padding */
+  box-sizing: border-box;
 }
 
 .portfolio-container {
   position: relative;
   max-width: 800px;
-  padding: 40px 20px;
   color: #f5d07f; /* golden color */
   font-family: 'Playfair Display', serif;
 }
 
 /* Mini headline */
 .portfolio-mini {
-  font-size: 1rem;
+  font-size: 1.1rem; /* slightly bigger for readability */
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   color: #ffd77f;
-  text-shadow: 0 0 6px rgba(255,215,127,0.5);
+  text-shadow: 0 0 6px rgba(255, 215, 127, 0.6);
 }
 
 /* Headline */
 .portfolio-headline {
-  font-size: 2.5rem;
+  font-size: 2.8rem; /* bigger for emphasis */
   font-weight: 700;
-  margin-bottom: 20px;
-  text-shadow: 0 0 12px rgba(245,208,127,0.6);
+  margin-bottom: 24px;
+  text-shadow: 0 0 14px rgba(245, 208, 127, 0.7);
+  line-height: 1.2;
 }
 
 /* Sub-headline */
 .portfolio-subheadline {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 35px;
+  font-size: 1.25rem; /* larger and easier to read */
+  line-height: 1.8;
+  margin-bottom: 40px;
   color: #f5d07f;
-  text-shadow: 0 0 6px rgba(245,208,127,0.4);
+  text-shadow: 0 0 8px rgba(245, 208, 127, 0.5);
 }
 
 /* CTA Button */
@@ -1191,17 +1197,17 @@ body{
   background: linear-gradient(135deg, #c9a86a, #b89657);
   color: #0a0a0a;
   font-weight: 700;
-  font-size: 1.05rem;
-  padding: 16px 36px;
-  border-radius: 12px;
+  font-size: 1.1rem;
+  padding: 18px 42px;
+  border-radius: 14px;
   text-decoration: none;
-  box-shadow: 0 15px 40px rgba(201,168,106,0.35);
+  box-shadow: 0 18px 45px rgba(201, 168, 106, 0.35);
   transition: all 0.3s ease;
 }
 
 .portfolio-cta:hover {
   transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 25px 60px rgba(201,168,106,0.5);
+  box-shadow: 0 25px 60px rgba(201, 168, 106, 0.5);
   background: linear-gradient(135deg, #ffd77f, #f5d07f);
   color: #0a0a0a;
 }
@@ -1209,16 +1215,17 @@ body{
 /* ===== MOBILE OPTIMIZATION ===== */
 @media (max-width: 768px) {
   .portfolio-headline {
-    font-size: 2rem;
+    font-size: 2.2rem; /* still big enough to read */
   }
 
   .portfolio-subheadline {
-    font-size: 1rem;
-    margin-bottom: 25px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.7;
   }
 
   .portfolio-cta {
-    padding: 14px 28px;
+    padding: 16px 32px;
     font-size: 1rem;
   }
 }
