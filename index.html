@@ -1,299 +1,75 @@
-<!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Add this in <head> -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luxury real estate copywriting & marketing for Austin, TX — faster closes, premium results.">
+  <title>EstateSpark — Luxury Real Estate Copywriting (Austin, TX)</title>
 
-<style>
-/* --------- Mobile Optimization --------- */
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-/* Ensure full width and proper scaling */
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
-}
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
-/* Make images responsive */
-img, video, iframe {
-    max-width: 100%;
-    height: auto;
-}
+  <!-- Optional favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
-/* Containers should fit mobile screens */
-.container, .wrapper, .content {
-    width: 100%;
-    padding: 0 10px;
-    margin: 0 auto;
-}
+  <style>
+    /* Base luxury colors (optional override if needed) */
+    :root {
+      --primary-black: #0b0b0b;
+      --primary-gold: #d4af37;
+      --primary-cream: #fdfaf6;
+      --accent: #c9a86a;
+    }
 
-/* Stack columns vertically on mobile */
-.row, .columns {
-    display: flex;
-    flex-wrap: wrap;
-}
+    body {
+      background: var(--primary-cream);
+      color: var(--primary-black);
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-.row > * , .columns > * {
-    flex: 1 1 100%;
-    margin-bottom: 15px;
-}
+    h1,h2,h3,h4,h5,h6 {
+      font-family: 'Playfair Display', serif;
+      color: var(--primary-black);
+    }
 
-/* Typography for mobile */
-h1 { font-size: 1.6em; }
-h2 { font-size: 1.4em; }
-h3 { font-size: 1.2em; }
-p { font-size: 1em; line-height: 1.5em; }
+    a {
+      text-decoration: none;
+      color: var(--primary-black);
+    }
 
-/* Buttons & links */
-button, a.button, .btn {
-    display: inline-block;
-    padding: 12px 20px;
-    font-size: 1em;
-    text-align: center;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-/* Media queries for smaller screens */
-@media only screen and (max-width: 768px) {
-    body { font-size: 14px; }
-    .container { padding: 0 5px; }
-    .header, .footer, nav { text-align: center; }
-    .menu, .nav-links { display: block; }
-}
-</style>
-<style>
-/* --------- Hero Section Mobile Fix --------- */
-@media only screen and (max-width: 768px) {
-  .hero-clean .container {
-    display: block !important;
-    gap: 20px !important;
-  }
-
-  .hero-clean .container > div {
-    width: 100% !important;
-    margin-bottom: 20px;
-  }
-
-  .hero-clean h1 {
-    font-size: 1.8rem !important;
-    line-height: 1.3 !important;
-  }
-
-  .hero-clean p {
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-  }
-
-  .hero-clean a {
-    font-size: 1rem !important;
-    padding: 12px 20px !important;
-  }
-
-  .hero-clean > .container > div:nth-child(2) {
-    text-align: center !important;
-  }
-}
-</style>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EstateSpark — Real Estate Copywriting (Austin, TX)</title>
-  <meta name="description" content="Real estate email & listing copywriting for Austin, Texas agents — faster closes, more responses, predictable listings." />
-  <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-</body>
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<script>
-(function() {
-  // MOBILE BREAKPOINT
-  const mobileWidth = 768;
-
-  function optimizeMobile() {
-    const width = window.innerWidth;
-
-    // HERO SECTION
-    const hero = document.querySelector('.hero-clean .container');
-    if (hero) {
-      if (width <= mobileWidth) {
-        hero.style.display = 'block';
-        hero.style.gap = '20px';
-        hero.querySelectorAll('div').forEach(div => {
-          div.style.width = '100%';
-          div.style.marginBottom = '20px';
-        });
-
-        const h1 = hero.querySelector('h1');
-        if (h1) { h1.style.fontSize = '1.8rem'; h1.style.lineHeight = '1.3'; }
-
-        const p = hero.querySelector('p');
-        if (p) { p.style.fontSize = '1rem'; p.style.lineHeight = '1.5'; }
-
-        const a = hero.querySelector('a');
-        if (a) { a.style.fontSize = '1rem'; a.style.padding = '12px 20px'; }
-
-        const rightDiv = hero.querySelector('div:nth-child(2)');
-        if (rightDiv) rightDiv.style.textAlign = 'center';
-      } else {
-        // Reset styles on desktop
-        hero.style.display = '';
-        hero.style.gap = '';
-        hero.querySelectorAll('div').forEach(div => {
-          div.style.width = '';
-          div.style.marginBottom = '';
-        });
-        const h1 = hero.querySelector('h1');
-        if (h1) { h1.style.fontSize = ''; h1.style.lineHeight = ''; }
-        const p = hero.querySelector('p');
-        if (p) { p.style.fontSize = ''; p.style.lineHeight = ''; }
-        const a = hero.querySelector('a');
-        if (a) { a.style.fontSize = ''; a.style.padding = ''; }
-        const rightDiv = hero.querySelector('div:nth-child(2)');
-        if (rightDiv) rightDiv.style.textAlign = '';
-      }
-    }
-
-    // NAVIGATION
-    const nav = document.querySelector('.nav.container');
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    if (nav && navToggle && navLinks) {
-      if (width <= mobileWidth) {
-        nav.style.flexWrap = 'wrap';
-        nav.style.justifyContent = 'space-between';
-        nav.style.alignItems = 'center';
-        nav.style.padding = '10px 5px';
-        navToggle.style.display = 'block';
-        navLinks.style.display = 'none';
-        navLinks.style.width = '100%';
-        navLinks.style.flexDirection = 'column';
-        navLinks.style.marginTop = '10px';
-      } else {
-        nav.style.flexWrap = '';
-        nav.style.justifyContent = '';
-        nav.style.alignItems = '';
-        nav.style.padding = '';
-        navToggle.style.display = '';
-        navLinks.style.display = '';
-        navLinks.style.width = '';
-        navLinks.style.flexDirection = '';
-        navLinks.style.marginTop = '';
-      }
-    }
-  }
-
-  // INITIAL RUN
-  optimizeMobile();
-
-  // RUN ON RESIZE
-  window.addEventListener('resize', optimizeMobile);
-
-  // HAMBURGER MENU TOGGLE
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-  if (navToggle && navLinks) {
-    navToggle.addEventListener('click', () => {
-      if (navLinks.style.display === 'flex') {
-        navLinks.style.display = 'none';
-      } else {
-        navLinks.style.display = 'flex';
-      }
-    });
-  }
-})();
-</script>
-     <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const OFFSET = document.querySelector(".nav-root")?.offsetHeight || 80;
-
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-      const targetId = this.getAttribute("href");
-      if (targetId.length > 1) {
-        const target = document.querySelector(targetId);
-        if (target) {
-          e.preventDefault();
-          const y = target.getBoundingClientRect().top + window.pageYOffset - OFFSET;
-          window.scrollTo({ top: y, behavior: "smooth" });
-        }
-      }
-    });
-  });
-});
-</script>
-
-    <!-- Global smooth scroll -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const OFFSET = document.querySelector(".nav-root")?.offsetHeight || 80;
-
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-      const targetId = this.getAttribute("href");
-      if (targetId.length > 1) {
-        const target = document.querySelector(targetId);
-        if (target) {
-          e.preventDefault();
-          const y =
-            target.getBoundingClientRect().top +
-            window.pageYOffset -
-            OFFSET;
-
-          window.scrollTo({
-            top: y,
-            behavior: "smooth"
-          });
-        }
-      }
-    });
-  });
-});
-</script>
-
-<!-- Close mobile nav after click -->
-<script>
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    document.getElementById("navLinks")?.classList.remove("open");
-  });
-});
-</script>
-<script>
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    document.getElementById("navLinks")?.classList.remove("open");
-  });
-});
-</script>
-
-</body>
 
 <body>
-
-  <!-- NAV -->
+  <!-- NAV BAR -->
   <header class="nav-root" id="top">
     <nav class="nav container">
+      <!-- Brand -->
       <div class="brand">EstateSpark</div>
 
+      <!-- Hamburger for mobile -->
       <button id="navToggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
 
-        <ul class="nav-links" id="navLinks">
-<li><a href="#deal-closing">Deal Closing System</a></li>
-<li><a href="#zero-work-protocol">How it Works</a></li>
-<li><a href="#luxury-testimonials">Partners Success</a></li>
-<li>
-  <a href="#no-brainer-offer" class="cta-proof-button">
-    Get $45+ in Commission
-  </a>
-</li>
-
-        </ul>
+      <!-- Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#deal-closing">Deal Closing System</a></li>
+        <li><a href="#zero-work-protocol">How it Works</a></li>
+        <li><a href="#luxury-testimonials">Partners Success</a></li>
+        <li><a href="#no-brainer-offer" class="cta-proof-button">Get $45+ in Commission</a></li>
+      </ul>
     </nav>
   </header>
-
 
 <!-- HERO SECTION — LUXURY AUTHORITY -->
 <section class="hero-luxury">
