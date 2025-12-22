@@ -1638,13 +1638,12 @@ body{
 }
 
 
-/* ===== THE PAIN SECTION — LUXURY CLEAN ===== */
-
+/* ===== THE PAIN SECTION — LUXURY DARK ===== */
 .the-pain-section {
-  background: #f8f5f0; /* soft cream luxury */
+  background: #0b0b0b; /* luxury deep black */
   padding: 90px 20px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #1a1a1a;
+  color: #fdfaf6; /* cream text for contrast */
 }
 
 .pain-container {
@@ -1659,7 +1658,7 @@ body{
   font-size: 0.9rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #9a8253;
+  color: #d4af37; /* golden accent */
   margin-bottom: 16px;
 }
 
@@ -1669,10 +1668,11 @@ body{
   font-weight: 700;
   margin-bottom: 28px;
   line-height: 1.15;
+  color: #fdfaf6; /* cream heading */
 }
 
 .pain-headline span {
-  color: #c9a86a;
+  color: #d4af37; /* golden accent for emphasis */
 }
 
 /* Body Copy */
@@ -1680,16 +1680,16 @@ body{
   font-size: 1.15rem;
   line-height: 1.7;
   margin-bottom: 18px;
-  color: #333;
+  color: #fdfaf6; /* cream body text */
 }
 
 .pain-copy strong {
   font-weight: 700;
-  color: #1a1a1a;
+  color: #d4af37; /* golden emphasis */
 }
 
 .gold {
-  color: #c9a86a;
+  color: #d4af37;
   font-weight: 700;
 }
 
@@ -1698,11 +1698,11 @@ body{
   margin-top: 40px;
   font-size: 1.3rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #fdfaf6; /* cream text */
 }
 
 .pain-closing span {
-  color: #c9a86a;
+  color: #d4af37; /* gold accent */
 }
 
 /* ===== MOBILE ===== */
