@@ -1719,3 +1719,8 @@ body{
     font-size: 1.15rem;
   }
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
