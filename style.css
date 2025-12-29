@@ -208,6 +208,120 @@ body {
   }
 }
 
+/* ==============================
+   Premium Slider Section CSS
+   ============================== */
+
+.premium-slider-section {
+  background: #F5F1EB; /* luxury cream-white */
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.premium-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* GOLD HEADLINE */
+.premium-headline {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #D4AF37; /* gold */
+  margin-bottom: 50px;
+}
+
+/* SLIDER */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 360px; /* 9:16 width */
+  margin: 0 auto 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Slider navigation buttons */
+.slider-prev,
+.slider-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #D4AF37;
+  color: #111;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+  background: #111;
+  color: #D4AF37;
+}
+
+.slider-prev { left: 12px; }
+.slider-next { right: 12px; }
+
+/* SINGLE BULLET CARD */
+.vertical-card.single-bullet {
+  background: #111;
+  color: #F5F1EB;
+  padding: 24px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+
+.vertical-card.single-bullet ul {
+  list-style: disc inside;
+  text-align: left;
+}
+
+.vertical-card.single-bullet li {
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .premium-headline {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+
+  .slider-container {
+    max-width: 90%;
+  }
+
+  .vertical-card.single-bullet {
+    width: 90%;
+  }
+}
+
+
 .system-section {
   background: #000;
   color: #f5f1eb;
