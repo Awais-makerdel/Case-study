@@ -1327,3 +1327,28 @@ body {
   color: #d4af37; /* gold text on hover */
   transform: translateY(-2px); /* subtle lift effect */
 }
+
+
+.slider-container {
+  max-width: 360px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #000;
+}
+
