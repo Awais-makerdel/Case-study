@@ -10,99 +10,112 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* NAVBAR */
-.nav {
-  background: #000;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+/* Nav Bar Container */
+.nav-bar {
+  width: 100%;
+  background: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
 }
 
-.nav-inner {
+.nav-container {
   max-width: 1200px;
-  margin: auto;
-  padding: 20px 24px;
+  margin: 0 auto;
+  padding: 12px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* BRAND */
-.nav-brand {
+/* Logo */
+.logo {
+  color: #D4AF37;
+  font-weight: 900;
   font-size: 1.5rem;
-  font-weight: 700;
-  color: #d4af37;
-  letter-spacing: 0.4px;
 }
 
-/* LINKS */
+/* Nav Links */
 .nav-links {
   display: flex;
-  gap: 36px;
+  list-style: none;
+  gap: 30px;
 }
 
-.nav-links a {
-  color: #f5f1eb;
+.nav-links li a {
+  color: #F5F1EB;
   text-decoration: none;
-  font-size: 0.95rem;
-  opacity: 0.85;
-  transition: opacity 0.2s ease;
+  font-weight: 500;
+  padding: 6px 12px;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-.nav-links a:hover {
-  opacity: 1;
+/* GOLDEN HOVER EFFECT */
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: #D4AF37;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
 }
 
 .nav-cta {
-  padding: 8px 16px;
+  border: 1px solid rgba(212, 175, 55, 0.7);
   border-radius: 999px;
-  font-weight: 500;
-  text-decoration: none;
-  border: 1px solid rgba(255,255,255,0.3);
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-cta:hover {
-  background: rgba(255,255,255,0.08);
+  background: rgba(212, 175, 55, 0.15);
+  color: #D4AF37;
 }
 
-/* MOBILE TOGGLE */
-.nav-toggle {
+/* Hamburger Menu (mobile) */
+.hamburger {
   display: none;
   flex-direction: column;
-  gap: 6px;
   cursor: pointer;
+  gap: 5px;
 }
 
-.nav-toggle span {
-  width: 22px;
-  height: 2px;
-  background: #f5f1eb;
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #D4AF37;
+  border-radius: 2px;
+  transition: 0.3s;
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
+/* Mobile Responsive */
+@media (max-width: 768px) {
   .nav-links {
-    position: absolute;
-    top: 78px;
-    left: 0;
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    height: calc(100% - 60px);
     width: 100%;
-    background: #000;
     flex-direction: column;
-    align-items: center;
-    gap: 28px;
-    padding: 40px 0;
-    display: none;
-    border-top: 1px solid rgba(212, 175, 55, 0.15);
+    background: #111;
+    padding-top: 40px;
+    gap: 20px;
+    transition: left 0.3s ease;
   }
 
   .nav-links.active {
-    display: flex;
+    left: 0;
   }
 
-  .nav-cta {
-    display: none;
-  }
-
-  .nav-toggle {
+  .hamburger {
     display: flex;
   }
 }
@@ -343,40 +356,32 @@ body {
   }
 }
 </style>
-
-/* ==============================
-   Premium Slider Section CSS (Updated)
-   ============================== */
-
 .premium-slider-section {
-  background: #F5F1EB; /* luxury cream-white */
+  background: #F5F1EB;
   padding: 80px 20px;
   font-family: 'Inter', sans-serif;
   text-align: center;
 }
 
 .premium-inner {
-  max-width: 800px;
+  max-width: 1200px; /* bigger container on large screens */
   margin: 0 auto;
 }
 
-/* GOLD HEADLINE */
 .premium-headline {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 900;
-  color: #D4AF37; /* gold */
+  color: #D4AF37;
   margin-bottom: 50px;
 }
 
-/* ==============================
-   SLIDER
-   ============================== */
-
+/* SLIDER */
 .slider-container {
   position: relative;
   overflow: hidden;
-  max-width: 360px; /* 9:16 width */
-  aspect-ratio: 9 / 16; /* ensures slider height matches 9:16 */
+  width: 100%;
+  max-width: 600px; /* big screens */
+  aspect-ratio: 9 / 16;
   margin: 0 auto 30px auto;
   border-radius: 16px;
   box-shadow: 0 12px 40px rgba(0,0,0,0.15);
@@ -389,65 +394,32 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .slide.active {
   opacity: 1;
-  position: relative;
   z-index: 2;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* ensures full image fits, no cropping */
+  object-fit: contain; /* full image visible */
   border-radius: 16px;
-  background: #000; /* fallback behind image */
+  background: #000;
 }
 
-/* ==============================
-   SINGLE BULLET CARD
-   ============================== */
-
-.vertical-card.single-bullet {
-  background: #111;
-  color: #F5F1EB;
-  padding: 24px 20px;
-  border-radius: 16px;
-  font-size: 1rem;
-  line-height: 1.6;
-  max-width: 500px;
-  margin: 0 auto;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-}
-
-.vertical-card.single-bullet ul {
-  list-style: disc inside;
-  text-align: left;
-}
-
-.vertical-card.single-bullet li {
-  font-weight: 600;
-}
-
-/* ==============================
-   RESPONSIVE
-   ============================== */
-
-@media (max-width: 600px) {
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
   .premium-headline {
     font-size: 2.2rem;
     margin-bottom: 30px;
   }
 
   .slider-container {
-    max-width: 90%;
-    aspect-ratio: auto; /* height adjusts automatically on mobile */
-  }
-
-  .vertical-card.single-bullet {
-    width: 90%;
+    max-width: 100%;
+    aspect-ratio: auto; /* scale perfectly on mobile */
   }
 }
 
