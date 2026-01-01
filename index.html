@@ -1,41 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Estate Spark</title>
-
-  <link rel="stylesheet" href="style.css" />
-  <script src="slider.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estate Spark Navbar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="nav">
-    <div class="nav-inner">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Left: Logo -->
+      <div class="logo">Estate Spark</div>
 
-      <!-- LEFT: BRAND -->
-      <div class="nav-brand">
-        Estate Spark
+      <!-- Center: Quick Links (Desktop) -->
+      <div class="nav-links">
+        <a href="#section2" class="nav-link">How It Works</a>
+        <a href="#section4" class="nav-link">21 Assets</a>
+        <a href="#section6" class="nav-link">Success Stories</a>
       </div>
-
-      <!-- Hamburger for mobile -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <!-- Nav Links -->
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#system" class="nav-link">System</a></li>
-      <li><a href="#assets" class="nav-link">Assets</a></li>
-      <li><a href="#seamless-control" class="nav-link nav-cta">Zero Risk</a></li>
-    </ul>
-  </div>
-</nav>
-
-      <!-- RIGHT: CTA -->
+      
+     <!-- RIGHT: CTA -->
         <a
   href="https://wa.me/447449759804?text=Quick%20question%20%E2%80%94%20is%20Estate%20Spark%20actually%20relevant%20for%20agents%20in%20South%20Liverpool%3F"
   class="nav-cta"
@@ -44,26 +30,30 @@
   Quick question
 </a>
 
-
-      <!-- MOBILE TOGGLE -->
-      <div class="nav-toggle" id="navToggle">
-        <span></span>
-        <span></span>
-        <span></span>
+        <!-- Mobile Hamburger -->
+        <button id="hamburger" class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </div>
-
     </div>
-  </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#section2" class="mobile-link">How It Works</a>
+      <a href="#section4" class="mobile-link">21 Assets</a>
+      <a href="#section6" class="mobile-link">Success Stories</a>
+    </div>
+  </nav>
 
   <script src="script.js"></script>
 </body>
-
 </html>
 
+
 <section class="hero">
-
   <div class="hero-inner">
-
     <h1 class="hero-headline">
       We Install <span class="hero-gold">Seller Re-engagement Systems</span> For Liverpool Estate Agents
     </h1>
