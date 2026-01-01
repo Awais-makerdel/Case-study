@@ -38,3 +38,24 @@ setInterval(() => {
   currentSlide = (currentSlide + 1) % slides.length;
   showSlide(currentSlide);
 }, 6000);
+
+<script>
+  // Select all slides
+  const slides = document.querySelectorAll('.slide');
+  let index = 0; // start with first slide
+
+  // Function to show next slide
+  function nextSlide() {
+    // Hide current slide
+    slides[index].classList.remove('active');
+
+    // Move to next slide (loop back to start)
+    index = (index + 1) % slides.length;
+
+    // Show next slide
+    slides[index].classList.add('active');
+  }
+
+  // Change slide every 4000ms (4 seconds)
+  setInterval(nextSlide, 4000);
+</script>
