@@ -6,31 +6,6 @@
   <title>Estate Spark </title>
   <link rel="stylesheet" href="style.css">
 </head>
-  <script>
-(function () {
-  const track = document.querySelector('.es-slider-track');
-  const slides = document.querySelectorAll('.es-slide');
-  let index = 0;
-  const total = slides.length;
-
-  function moveSlider() {
-    index++;
-    if (index === total) {
-      index = 0;
-      track.style.transition = 'none';
-      track.style.transform = 'translateX(0)';
-      setTimeout(() => {
-        track.style.transition = 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)';
-      }, 50);
-    } else {
-      track.style.transform = `translateX(-${index * 100}%)`;
-    }
-  }
-
-  setInterval(moveSlider, 4000);
-})();
-</script>
-
 <body>
 
   <!-- Navbar -->
@@ -189,6 +164,32 @@
 
   </div>
 </section>
+
+<!-- Slider JS — Place RIGHT AFTER the section -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.querySelector('.es-slider-track');
+  const slides = document.querySelectorAll('.es-slide');
+  let index = 0;
+  const total = slides.length;
+
+  function moveSlider() {
+    index++;
+    if (index === total) {
+      index = 0;
+      track.style.transition = 'none';
+      track.style.transform = 'translateX(0)';
+      setTimeout(() => {
+        track.style.transition = 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)';
+      }, 50);
+    } else {
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+  }
+
+  setInterval(moveSlider, 4000);
+});
+</script>
 
 
 <section id="system" class="system-section">
