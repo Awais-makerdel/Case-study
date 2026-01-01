@@ -1,177 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work / Deal-Closing System</title>
-  <style>
-    /* ====== LUXURY DEAL-CLOSING SECTION ====== */
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #0a0a0a;
-      color: #f5f5f5;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work / Deal-Closing System</title>
+<style>
+  /* =================== LUXURY DEAL-CLOSING SECTION =================== */
+  body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+  }
 
-    .deal-closing-section {
-      position: relative;
-      overflow: hidden;
-      padding: 100px 20px 60px;
-    }
+  .deal-closing-section {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 20px 60px;
+  }
 
-    .background-overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: url('images/hurghadiansproperty_A_stunning_contemporary_villa_in_Marbella_S_a1848e18-b163-47ee-881c-d7b473fe7e49.webp') center/cover no-repeat;
-      opacity: 0.08;
-      z-index: 0;
-      filter: brightness(0.6);
-    }
+  .background-overlay {
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: url('images/hurghadiansproperty_A_stunning_contemporary_villa_in_Marbella_S_a1848e18-b163-47ee-881c-d7b473fe7e49.webp') center/cover no-repeat;
+    opacity: 0.08;
+    z-index:0;
+    filter: brightness(0.6);
+  }
 
-    .content-wrapper {
-      position: relative;
-      max-width: 1200px;
-      margin: 0 auto;
-      z-index: 1;
-      text-align: center;
-    }
+  .content-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index:1;
+    text-align: center;
+  }
 
-    .main-headline {
-      font-size: 2.8rem;
-      font-weight: 800;
-      margin-bottom: 80px;
-      line-height: 1.3;
-    }
+  .main-headline {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 80px;
+    line-height: 1.3;
+  }
+  .main-headline span { color: #FFD700; }
 
-    .main-headline span {
-      color: #FFD700;
-    }
+  .subsections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
 
+  .subsection {
+    flex: 1 1 30%;
+    background: rgba(255,255,255,0.03);
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    backdrop-filter: blur(6px);
+  }
+
+  .subsection:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  }
+
+  .sub-image {
+    max-width: 80%;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+    transition: transform 0.4s ease;
+    cursor: pointer;
+  }
+
+  .sub-image:hover { transform: scale(1.08); }
+
+  .sub-text h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #FFD700;
+  }
+
+  .sub-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f5f5f5;
+  }
+
+  .notion-link, .pdf-link {
+    margin-top: 15px;
+    color: #FFD700;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .notion-link:hover, .pdf-link:hover {
+    color: #e6c200;
+    transform: translateY(-2px);
+  }
+
+  .cta-wrapper {
+    margin-top: 50px;
+    text-align: center;
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  .cta-wrapper h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  .cta-wrapper h2 span { color: #FFD700; }
+
+  .cta-wrapper p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: #FFD700;
+    color: #0a0a0a;
+    font-weight: 700;
+    padding: 18px 50px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 25px rgba(255,215,0,0.5);
+  }
+
+  .cta-button:hover {
+    background: #e6c200;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(255,215,0,0.7);
+  }
+
+  @keyframes fadeInUp {
+    0% {opacity: 0; transform: translateY(30px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+
+  @media (max-width: 992px) {
     .subsections {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 40px;
-      margin-bottom: 60px;
-    }
-
-    .subsection {
-      flex: 1 1 30%;
-      background: rgba(255, 255, 255, 0.03);
-      border-radius: 20px;
-      padding: 25px;
-      display: flex;
       flex-direction: column;
-      align-items: center;
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-      backdrop-filter: blur(6px);
+      gap: 50px;
     }
+    .sub-image { max-width: 90%; }
+    .main-headline { font-size: 2rem; }
+    .cta-wrapper h2 { font-size: 1.8rem; }
+  }
 
-    .subsection:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-    }
-
-    .sub-image {
-      max-width: 80%;
-      border-radius: 15px;
-      margin-bottom: 25px;
-      box-shadow: 0 12px 25px rgba(0,0,0,0.5);
-      transition: transform 0.4s ease;
-    }
-
-    .sub-image:hover {
-      transform: scale(1.08);
-    }
-
-    .sub-text h2 {
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 15px;
-      color: #FFD700;
-    }
-
-    .sub-text p {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #f5f5f5;
-    }
-
-    .notion-link {
-      margin-top: 15px;
-      color: #FFD700;
-      font-weight: 600;
-      text-decoration: none;
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
-
-    .notion-link:hover {
-      color: #e6c200;
-      transform: translateY(-2px);
-    }
-
-    .cta-wrapper {
-      margin-top: 50px;
-      text-align: center;
-      animation: fadeInUp 1s ease forwards;
-    }
-
-    .cta-wrapper h2 {
-      font-size: 2.2rem;
-      font-weight: 800;
-      margin-bottom: 20px;
-      line-height: 1.3;
-    }
-
-    .cta-wrapper h2 span {
-      color: #FFD700;
-    }
-
-    .cta-wrapper p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background: #FFD700;
-      color: #0a0a0a;
-      font-weight: 700;
-      padding: 18px 50px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-size: 1.2rem;
-      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-      box-shadow: 0 10px 25px rgba(255,215,0,0.5);
-    }
-
-    .cta-button:hover {
-      background: #e6c200;
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(255,215,0,0.7);
-    }
-
-    @keyframes fadeInUp {
-      0% {opacity: 0; transform: translateY(30px);}
-      100% {opacity: 1; transform: translateY(0);}
-    }
-
-    @media (max-width: 992px) {
-      .subsections {
-        flex-direction: column;
-        gap: 50px;
-      }
-      .sub-image {
-        max-width: 90%;
-      }
-      .main-headline {
-        font-size: 2rem;
-      }
-      .cta-wrapper h2 {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
+</style>
 </head>
 <body>
 
@@ -185,35 +173,37 @@
 
     <div class="subsections">
       <div class="subsection">
-        <img src="images/a-hyper-realistic-professional-product-p_vvJQ_v8YQAiKvBntt74X-A_2IoSgVmRQKyYkil7cFwITA.jpeg" alt="Email on MacBook" class="sub-image">
+        <img src="images/email-macbook.webp" alt="Email on MacBook" class="sub-image">
         <div class="sub-text">
-          <h2>Every Email Is a Masterclass in Persuasion</h2>
-          <p>I craft each email to spark replies and position you as the expert, so prospects move toward saying <strong>‘yes’</strong> — fast.</p>
+          <h2>Step 1: Hyper-Local Emails That Convert</h2>
+          <p>Every email is crafted to spark replies and position you as the local expert, producing fast results in South Liverpool.</p>
         </div>
-        <a href="https://www.notion.so/YOUR_PAGE" target="_blank" rel="noopener" class="notion-link">Access the Notion System</a>
+        <a href="https://www.notion.so/YOUR_PAGE" target="_blank" rel="noopener" class="notion-link">Open Notion Workflow →</a>
       </div>
 
       <div class="subsection">
-        <img src="images/iPad-and-iPhone-7-Plus-Mockup2.webp" alt="PDF on iPad" class="sub-image">
+        <img src="images/pdf-guide.webp" alt="PDF on iPad" class="sub-image">
         <div class="sub-text">
-          <h2>Deliver Real Value — Lead Every Conversation</h2>
-          <p>Top agents close big because they provide PDFs, guides, and assets <strong>prospects can’t ignore</strong> — all pre-built for maximum impact.</p>
+          <h2>Step 2: Value PDFs — Educate & Persuade</h2>
+          <p>Give prospects hyper-local insights and real ground-level information — they read, trust, and take action.</p>
         </div>
+        <a href="https://example.com/pdf1.pdf" target="_blank" class="pdf-link">Download PDF →</a>
       </div>
 
       <div class="subsection">
-        <img src="images/Preview_4b_3c641382-d29b-4db7-a196-d5155edfd2b5_1024x1024.webp" alt="Messages on iPhone" class="sub-image">
+        <img src="images/pdf-next.webp" alt="Next PDF" class="sub-image">
         <div class="sub-text">
-          <h2>Three Ready-to-Send Messages — Close Like a Pro</h2>
-          <p>I give you battle-tested replies — personalize names, send, and watch deals accelerate. Complete system, zero guesswork.</p>
+          <h2>Step 3: 2-Step Closing Scripts</h2>
+          <p>Two battle-tested messages that guide prospects to call, reply, and book — plug-and-play system, zero guesswork.</p>
         </div>
+        <a href="https://example.com/pdf2.pdf" target="_blank" class="pdf-link">Download PDF →</a>
       </div>
     </div>
 
     <div class="cta-wrapper">
-      <h2>Take Control of Your Deals and Earn <span>$45K+</span> Faster</h2>
-      <p>Everything you need — emails, templates, and guides — crafted for top agents who close more, faster.</p>
-      <a href="#no-brainer-offer" class="cta-button">Grab Your Premium System →</a>
+      <h2>Ready to Dominate South Liverpool? <span>$45K+</span> Commissions Await</h2>
+      <p>All 21 assets — emails, PDFs, scripts — packaged for agents who close more, faster.</p>
+      <a href="#contact" class="cta-button">Grab Your Premium System →</a>
     </div>
 
   </div>
