@@ -1,43 +1,37 @@
-const toggle = document.getElementById("navToggle");
-const links = document.getElementById("navLinks");
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
 
-toggle.addEventListener("click", () => {
-  links.classList.toggle("active");
+// Toggle menu on hamburger click
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
 });
 
-// Close menu on link click
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    links.classList.remove("active");
+// Close menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
   });
 });
 
-
-const slides = document.querySelectorAll('.slider-container .slide');
-const prevBtn = document.querySelector('.slider-prev');
-const nextBtn = document.querySelector('.slider-next');
-let currentSlide = 0;
-
-function showSlide(index) {
-  slides.forEach((slide) => slide.classList.remove('active'));
-  slides[index].classList.add('active');
-}
-
-prevBtn.addEventListener('click', () => {
-  currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
-  showSlide(currentSlide);
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+    navLinks.classList.remove('active');
+  }
 });
 
-nextBtn.addEventListener('click', () => {
-  currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
-  showSlide(currentSlide);
+// Smooth scroll to section
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
 });
+</script>
 
-// Auto-slide every 6 seconds
-setInterval(() => {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}, 6000);
+
 
 <script>
   // Select all slides
