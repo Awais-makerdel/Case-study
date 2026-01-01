@@ -543,9 +543,44 @@
   </div>
 </footer>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.slider-container .slide');
+  const prevBtn = document.querySelector('.slider-prev');
+  const nextBtn = document.querySelector('.slider-next');
+  let currentIndex = 0;
+  const total = slides.length;
 
+  // Show slide by index
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = (i === index) ? 'block' : 'none';
+    });
+  }
 
-<script src="script.js"></script>
+  showSlide(currentIndex);
+
+  // Next / Prev Buttons
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % total;
+    showSlide(currentIndex);
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + total) % total;
+    showSlide(currentIndex);
+  });
+
+  // Auto-slide every 4 seconds
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % total;
+    showSlide(currentIndex);
+  }, 4000);
+});
+</script>
+
+  
 </body>
+  
 </html>
 
