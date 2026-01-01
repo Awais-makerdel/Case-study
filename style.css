@@ -51,20 +51,17 @@ body {
   opacity: 1;
 }
 
-/* CTA */
-.nav-cta a {
-  padding: 10px 22px;
-  border: 1px solid #d4af37;
-  color: #f5f1eb;
+.nav-cta {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 500;
   text-decoration: none;
-  font-weight: 600;
-  border-radius: 30px;
-  transition: background 0.25s ease, color 0.25s ease;
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: all 0.25s ease;
 }
 
-.nav-cta a:hover {
-  background: #d4af37;
-  color: #000;
+.nav-cta:hover {
+  background: rgba(255,255,255,0.08);
 }
 
 /* MOBILE TOGGLE */
@@ -347,9 +344,8 @@ body {
 }
 </style>
 
-
 /* ==============================
-   Premium Slider Section CSS
+   Premium Slider Section CSS (Updated)
    ============================== */
 
 .premium-slider-section {
@@ -372,63 +368,53 @@ body {
   margin-bottom: 50px;
 }
 
-/* SLIDER */
+/* ==============================
+   SLIDER
+   ============================== */
+
 .slider-container {
   position: relative;
   overflow: hidden;
   max-width: 360px; /* 9:16 width */
+  aspect-ratio: 9 / 16; /* ensures slider height matches 9:16 */
   margin: 0 auto 30px auto;
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: 0 12px 40px rgba(0,0,0,0.15);
 }
 
 .slide {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .slide.active {
-  display: block;
+  opacity: 1;
+  position: relative;
+  z-index: 2;
 }
 
 .slide img {
   width: 100%;
-  aspect-ratio: 9 / 16;
-  object-fit: cover;
-  border-radius: 12px;
+  height: 100%;
+  object-fit: contain; /* ensures full image fits, no cropping */
+  border-radius: 16px;
+  background: #000; /* fallback behind image */
 }
 
-/* Slider navigation buttons */
-.slider-prev,
-.slider-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #D4AF37;
-  color: #111;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  z-index: 10;
-}
+/* ==============================
+   SINGLE BULLET CARD
+   ============================== */
 
-.slider-prev:hover,
-.slider-next:hover {
-  background: #111;
-  color: #D4AF37;
-}
-
-.slider-prev { left: 12px; }
-.slider-next { right: 12px; }
-
-/* SINGLE BULLET CARD */
 .vertical-card.single-bullet {
   background: #111;
   color: #F5F1EB;
   padding: 24px 20px;
-  border-radius: 12px;
+  border-radius: 16px;
   font-size: 1rem;
   line-height: 1.6;
   max-width: 500px;
@@ -445,7 +431,10 @@ body {
   font-weight: 600;
 }
 
-/* Responsive */
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
 @media (max-width: 600px) {
   .premium-headline {
     font-size: 2.2rem;
@@ -454,6 +443,7 @@ body {
 
   .slider-container {
     max-width: 90%;
+    aspect-ratio: auto; /* height adjusts automatically on mobile */
   }
 
   .vertical-card.single-bullet {
@@ -1328,27 +1318,4 @@ body {
   transform: translateY(-2px); /* subtle lift effect */
 }
 
-
-.slider-container {
-  max-width: 360px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.slide {
-  display: none;
-}
-
-.slide.active {
-  display: block;
-}
-
-.slide img {
-  width: 100%;
-  aspect-ratio: 9 / 16;
-  height: auto;
-  object-fit: contain;
-  border-radius: 16px;
-  background: #000;
-}
 
