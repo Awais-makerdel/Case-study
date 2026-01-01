@@ -164,11 +164,10 @@
 
   </div>
 </section>
-
-<!-- Slider JS — Place RIGHT AFTER the section -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const track = document.querySelector('.es-slider-track');
+  if (!track) return; // safety check
   const slides = document.querySelectorAll('.es-slide');
   let index = 0;
   const total = slides.length;
@@ -190,7 +189,6 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(moveSlider, 4000);
 });
 </script>
-
 
 <section id="system" class="system-section">
   <div class="system-inner">
