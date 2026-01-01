@@ -3,79 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estate Spark </title>
+  <title>Estate Spark</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <head>
+  <style>
+    /* Minimal page reset for demo */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background-color: #fff; color: #111; }
+  </style>
+</head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
-      <!-- Left: Logo -->
       <div class="logo">Estate Spark</div>
 
-      <!-- Center: Quick Links (Desktop) -->
-<div class="nav-links">
-  <a href="#friction" class="nav-link">How It Works</a>
-  <a href="#system" class="nav-link">21 Assets</a>
-  <a href="#results" class="nav-link">Success Stories</a>
-</div>
-      
-     <!-- RIGHT: CTA -->
-        <a
-  href="https://wa.me/447449759804?text=Quick%20question%20%E2%80%94%20is%20Estate%20Spark%20actually%20relevant%20for%20agents%20in%20South%20Liverpool%3F"
-  class="nav-cta"
-  target="_blank"
->
-  Quick question
-</a>
-
-        <!-- Mobile Hamburger -->
-        <button id="hamburger" class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
+      <div class="nav-links">
+        <a href="#friction" class="nav-link">How It Works</a>
+<a href="#system" class="nav-link">21 Assets</a>
+<a href="#premium-slider" class="nav-link">Success Stories</a>
+        </a>
       </div>
+
+      <a href="https://wa.me/447449759804?text=Quick%20question"
+         class="nav-cta" target="_blank">
+        Quick question
+      </a>
+
+      <button id="hamburger" class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
     </div>
 
-   <!-- Mobile Menu -->
-<div id="mobileMenu" class="mobile-menu">
-  <a href="#friction" class="mobile-link">How It Works</a>
-  <a href="#system" class="mobile-link">21 Assets</a>
-  <a href="#results" class="mobile-link">Success Stories</a>
-</div>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#friction" class="mobile-link">How It Works</a>
+      <a href="#system" class="mobile-link">21 Assets</a>
+      <a href="#results" class="mobile-link">Success Stories</a>
+    </div>
+  </nav>
 
-<section class="hero">
-  <div class="hero-inner">
-    <h1 class="hero-headline">
-      We Install <span class="hero-gold">Seller Re-engagement Systems</span> For Liverpool Estate Agents
-    </h1>
-
-    <p class="hero-subheadline">
-      A structured email-to-conversation framework designed to revive dormant sellers
-      and turn quiet pipelines into booked appointments —
-      without portals, pressure, or guesswork.
-    </p>
-
-    <ul class="hero-points">
-      <li>For serious Liverpool agents seeking predictable conversations, not generic leads</li>
-      <li>Removes uncertainty from stalled seller follow-ups</li>
-      <li>Hyper-local focus: Allerton, Mossley Hill, L18</li>
-    </ul>
-
-  <a
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-headline">
+        We Install <span class="hero-gold">Seller Re-engagement Systems</span> For Liverpool Estate Agents
+      </h1>
+      <p class="hero-subheadline">
+        A structured email-to-conversation framework designed to revive dormant sellers
+        and turn quiet pipelines into booked appointments — without portals, pressure, or guesswork.
+      </p>
+      <ul class="hero-points">
+        <li>For serious Liverpool agents seeking predictable conversations, not generic leads</li>
+        <li>Removes uncertainty from stalled seller follow-ups</li>
+        <li>Hyper-local focus: Allerton, Mossley Hill, L18</li>
+      </ul>
+      
+      <a
   href="https://wa.me/447449759804?text=Hi%2C%20I%E2%80%99m%20an%20estate%20agent%20in%20South%20Liverpool.%20Can%20you%20sanity-check%20whether%20this%20would%20actually%20work%20for%20my%20area%3F"
   class="hero-cta"
   target="_blank"
 >
   Sanity-check this for my area
 </a>
-  </div>
-</section>
+      
+    </div>
+  </section>
 
-<!-- MOBILE-FIRST LUXURY PROOF SECTION -->
+  <!-- MOBILE-FIRST LUXURY PROOF SECTION -->
 <section class="m-proof">
   <div class="m-card">
 
@@ -126,62 +122,49 @@
   </div>
 </section>
 
-<section class="es-slider-section">
-  <div class="es-slider-container">
+<section id="premium-slider" class="premium-slider-section">
+  <div class="premium-inner">
 
-    <h2 class="es-slider-headline">
-      Real Outcome When Estate Spark in Action
-    </h2>
+    <!-- GOLD HEADLINE -->
+    <h2 class="premium-headline">Real Outcomes That Speak For Themselves</h2>
 
-    <div class="es-slider-viewport">
-      <div class="es-slider-track">
+    <div class="slider-card-wrapper">
 
-        <div class="es-slide">
-          <img src="./images/file_00000000ada071fa854f32dbcb96fe6d.webp" alt="Viewings booked">
+      <!-- SLIDER -->
+      <div class="slider-container">
+        <div class="slide active">
+          <img src="https://via.placeholder.com/400x300" alt="WhatsApp lead screenshot">
+        </div>
+        <div class="slide">
+          <img src="https://via.placeholder.com/400x300" alt="CRM pipeline screenshot">
+        </div>
+        <div class="slide">
+          <img src="https://via.placeholder.com/400x300" alt="X viewings booked">
+        </div>
+        <div class="slide">
+          <img src="https://via.placeholder.com/400x300" alt="Seller email snapshot">
         </div>
 
-        <div class="es-slide">
-          <img src="./images/file_0000000015ac71fa9f16167bf25518b8-1.webp" alt="CRM pipeline">
-        </div>
-
-        <div class="es-slide">
-          <img src="./images/file_000000000d007207b768cf1565dd0572.webp" alt="WhatsApp lead">
-        </div>
-
-        <div class="es-slide">
-          <img src="./images/file_00000000ada071fa854f32dbcb96fe6d.webp" alt="Seller response">
-        </div>
-
+        <!-- Navigation -->
+        <button class="slider-prev">&#10094;</button>
+        <button class="slider-next">&#10095;</button>
       </div>
-    </div>
 
+      <!-- VERTICAL CARD WITH BULLETS -->
+      <div class="vertical-card">
+        <h3>How Estate Spark Works</h3>
+        <ul>
+          <li>Hyper-local email sequences that revive dormant sellers</li>
+          <li>Value PDFs to inform and build trust</li>
+          <li>Precision scripts to convert warm leads into calls</li>
+          <li>Seamless workflow from first contact to booked appointment</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 </section>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const track = document.querySelector('.es-slider-track');
-  if (!track) return; // safety check
-  const slides = document.querySelectorAll('.es-slide');
-  let index = 0;
-  const total = slides.length;
 
-  function moveSlider() {
-    index++;
-    if (index === total) {
-      index = 0;
-      track.style.transition = 'none';
-      track.style.transform = 'translateX(0)';
-      setTimeout(() => {
-        track.style.transition = 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)';
-      }, 50);
-    } else {
-      track.style.transform = `translateX(-${index * 100}%)`;
-    }
-  }
-
-  setInterval(moveSlider, 4000);
-});
-</script>
 
 <section id="system" class="system-section">
   <div class="system-inner">
@@ -555,11 +538,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <footer class="site-footer">
   <div class="footer-inner">
     <p>Estate Spark — Hyper-Local Seller Re-Engagement Systems | Liverpool, UK</p>
-    <p>© 2025 Estate Spark. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+    <p>© 2026 Estate Spark. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
     <p>Follow us: <a href="#">LinkedIn</a></p>
   </div>
 </footer>
-
 
 
 
