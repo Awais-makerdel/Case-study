@@ -3,9 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estate Spark Navbar</title>
+  <title>Estate Spark </title>
   <link rel="stylesheet" href="style.css">
 </head>
+  <script>
+(function () {
+  const track = document.querySelector('.es-slider-track');
+  const slides = document.querySelectorAll('.es-slide');
+  let index = 0;
+  const total = slides.length;
+
+  function moveSlider() {
+    index++;
+    if (index === total) {
+      index = 0;
+      track.style.transition = 'none';
+      track.style.transform = 'translateX(0)';
+      setTimeout(() => {
+        track.style.transition = 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)';
+      }, 50);
+    } else {
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+  }
+
+  setInterval(moveSlider, 4000);
+})();
+</script>
+
 <body>
 
   <!-- Navbar -->
@@ -15,11 +40,11 @@
       <div class="logo">Estate Spark</div>
 
       <!-- Center: Quick Links (Desktop) -->
-      <div class="nav-links">
-        <a href="#section2" class="nav-link">How It Works</a>
-        <a href="#section4" class="nav-link">21 Assets</a>
-        <a href="#section6" class="nav-link">Success Stories</a>
-      </div>
+<div class="nav-links">
+  <a href="#friction" class="nav-link">How It Works</a>
+  <a href="#system" class="nav-link">21 Assets</a>
+  <a href="#results" class="nav-link">Success Stories</a>
+</div>
       
      <!-- RIGHT: CTA -->
         <a
@@ -39,13 +64,13 @@
       </div>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="mobile-menu">
-      <a href="#section2" class="mobile-link">How It Works</a>
-      <a href="#section4" class="mobile-link">21 Assets</a>
-      <a href="#section6" class="mobile-link">Success Stories</a>
-    </div>
-  </nav>
+   <!-- Mobile Menu -->
+<div id="mobileMenu" class="mobile-menu">
+  <a href="#friction" class="mobile-link">How It Works</a>
+  <a href="#system" class="mobile-link">21 Assets</a>
+  <a href="#results" class="mobile-link">Success Stories</a>
+</div>
+
 
   <script src="script.js"></script>
 </body>
@@ -132,34 +157,34 @@
 
   </div>
 </section>
-<section id="luxury-slider" class="luxury-slider">
-  <div class="luxury-container">
 
-    <h2 class="luxury-slider-headline">
-      Proof, Not Promises
+<section class="es-slider-section">
+  <div class="es-slider-container">
+
+    <h2 class="es-slider-headline">
+      Real Outcome When Estate Spark in Action
     </h2>
 
-    <div class="luxury-slider-frame">
+    <div class="es-slider-viewport">
+      <div class="es-slider-track">
 
-      <div class="luxury-slide active">
-        <img src="./images/file_00000000ada071fa854f32dbcb96fe6d.webp" alt="X viewings booked">
+        <div class="es-slide">
+          <img src="./images/file_00000000ada071fa854f32dbcb96fe6d.webp" alt="Viewings booked">
+        </div>
+
+        <div class="es-slide">
+          <img src="./images/file_0000000015ac71fa9f16167bf25518b8-1.webp" alt="CRM pipeline">
+        </div>
+
+        <div class="es-slide">
+          <img src="./images/file_000000000d007207b768cf1565dd0572.webp" alt="WhatsApp lead">
+        </div>
+
+        <div class="es-slide">
+          <img src="./images/file_00000000ada071fa854f32dbcb96fe6d.webp" alt="Seller response">
+        </div>
+
       </div>
-
-      <div class="luxury-slide">
-        <img src="./images/file_0000000015ac71fa9f16167bf25518b8-1.webp" alt="CRM pipeline screenshot">
-      </div>
-
-      <div class="luxury-slide">
-        <img src="./images/file_000000000d007207b768cf1565dd0572.webp" alt="WhatsApp lead screenshot">
-      </div>
-
-      <button class="luxury-prev">&#10094;</button>
-      <button class="luxury-next">&#10095;</button>
-
-    </div>
-
-    <div class="luxury-slider-note">
-      <p>Hyper-local seller conversations reactivated across Liverpool</p>
     </div>
 
   </div>
@@ -283,12 +308,12 @@
       <!-- Right graphic / visual blocks -->
       <div class="market-graphics">
         <div class="graphic-card">
-          <div class="graphic-icon">🏠</div>
+          <div class="graphic-icon"></div>
           <div class="graphic-text">Avg House Price £271k</div>
         </div>
 
         <div class="graphic-card">
-          <div class="graphic-icon">📊</div>
+          <div class="graphic-icon"></div>
           <div class="graphic-text">Monthly Sales 94k</div>
         </div>
       </div>
@@ -333,17 +358,17 @@
       <!-- Right graphics -->
       <div class="emails-graphics">
         <div class="graphic-card">
-          <div class="graphic-icon">✉️</div>
+          <div class="graphic-icon"></div>
           <div class="graphic-text">Old Email Templates</div>
         </div>
 
         <div class="graphic-card">
-          <div class="graphic-icon">⏱️</div>
+          <div class="graphic-icon"></div>
           <div class="graphic-text">Automated Drips</div>
         </div>
 
         <div class="graphic-card">
-          <div class="graphic-icon">🙈</div>
+          <div class="graphic-icon"></div>
           <div class="graphic-text">Ignored by Sellers</div>
         </div>
       </div>
@@ -542,3 +567,8 @@
     <p>Follow us: <a href="#">LinkedIn</a></p>
   </div>
 </footer>
+
+
+
+
+
